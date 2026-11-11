@@ -716,7 +716,18 @@
      work fills the box and ends flush against it. Below the breakpoints each
      image takes its own height and every caption sits the same distance from
      the picture above it. */
-  @media (max-width: 34rem) { .works img { aspect-ratio: auto; } }
+  @media (max-width: 34rem) {
+    .works img {
+      aspect-ratio: auto;
+      /* and a ceiling, so a tall work doesn't run off the screen. Width is
+         released with it: the image narrows to meet the cap instead of being
+         letterboxed, which keeps its proportions honest — a work three times
+         as tall as it is wide ends up narrow on the page, as it should. */
+      width: auto;
+      max-width: 100%;
+      max-height: 62vh;
+    }
+  }
 
   /* installation views, wider. A uniform 3:2 box keeps the rows aligned;
      object-fit: contain means nothing is cropped, so the one portrait-format
@@ -724,7 +735,9 @@
   .installs { display: grid; grid-template-columns: 1fr; gap: 3rem 2rem; margin: 0; }
   @media (min-width: 46rem) { .installs { grid-template-columns: 1fr 1fr; } }
   .installs img { aspect-ratio: 3 / 2; object-fit: contain; background: var(--paper); }
-  @media (max-width: 45.99rem) { .installs img { aspect-ratio: auto; } }
+  @media (max-width: 45.99rem) {
+    .installs img { aspect-ratio: auto; width: auto; max-width: 100%; max-height: 62vh; }
+  }
 
   /* posters, three up */
   .posters { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 2.5rem 2rem; margin: 0; align-items: start; }
