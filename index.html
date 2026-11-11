@@ -650,10 +650,13 @@
 
 <style>
   :root {
-    --ink: #1a1a1a;
-    --paper: #faf9f7;
-    --rule: #d8d4cc;
-    --quiet: #6b6560;
+    /* Warm graphite, as in the PDF: the serif and the gallery's own walls are
+       warm, so a neutral off-black would read cold beside them. The letterbox
+       behind each image takes the same tone, so nothing frames it. */
+    --ink: #f2f0ec;
+    --paper: #262320;
+    --rule: #4a4540;
+    --quiet: #a39c93;
     --measure: 34rem;
   }
   * { box-sizing: border-box; }
@@ -678,12 +681,12 @@
   /* the venue and dates sit as a tight pair; prose after them needs air */
   .meta + p:not(.meta) { margin-top: 1.25rem; }
   h2 {
-    font-size: 0.8125rem;
+    font-size: 1.0625rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.09em;
     font-weight: 600;
     color: var(--quiet);
-    margin: 4.5rem 0 1.25rem;
+    margin: 4.5rem 0 1.5rem;
   }
   h3 {
     font-size: 1.0625rem;
@@ -697,7 +700,7 @@
   a:hover { text-decoration-color: var(--ink); }
 
   figure { margin: 0; }
-  figure img { width: 100%; height: auto; display: block; background: #eceae6; }
+  figure img { width: 100%; height: auto; display: block; background: var(--paper); }
   figcaption { font-size: 0.875rem; line-height: 1.5; color: var(--quiet); margin-top: 0.7rem; }
   figcaption .t { font-style: italic; color: var(--ink); }
 
