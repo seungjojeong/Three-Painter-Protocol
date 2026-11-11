@@ -701,7 +701,7 @@
 
   figure { margin: 0; }
   figure img { width: 100%; height: auto; display: block; background: var(--paper); }
-  figcaption { font-size: 0.875rem; line-height: 1.5; color: var(--quiet); margin-top: 0.7rem; }
+  figcaption { font-size: 0.875rem; line-height: 1.5; color: var(--quiet); margin-top: 0.95rem; }
   figcaption .t { font-style: italic; color: var(--ink); }
 
   /* individual works, grouped by artist */
@@ -710,6 +710,13 @@
      height-constrained, each centred in its own box. */
   .works { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 2.75rem 2rem; margin: 1.75rem 0 0; align-items: start; }
   .works img { aspect-ratio: 1 / 1; object-fit: contain; background: var(--paper); }
+  /* The square box exists to level the rows of a grid. In a single column
+     there are no rows to level, and it does harm: a landscape work is
+     letterboxed, which looks like space before its caption, while a portrait
+     work fills the box and ends flush against it. Below the breakpoints each
+     image takes its own height and every caption sits the same distance from
+     the picture above it. */
+  @media (max-width: 34rem) { .works img { aspect-ratio: auto; } }
 
   /* installation views, wider. A uniform 3:2 box keeps the rows aligned;
      object-fit: contain means nothing is cropped, so the one portrait-format
@@ -717,6 +724,7 @@
   .installs { display: grid; grid-template-columns: 1fr; gap: 3rem 2rem; margin: 0; }
   @media (min-width: 46rem) { .installs { grid-template-columns: 1fr 1fr; } }
   .installs img { aspect-ratio: 3 / 2; object-fit: contain; background: var(--paper); }
+  @media (max-width: 45.99rem) { .installs img { aspect-ratio: auto; } }
 
   /* posters, three up */
   .posters { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 2.5rem 2rem; margin: 0; align-items: start; }
