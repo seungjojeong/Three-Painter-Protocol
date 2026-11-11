@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+  ============================================================
+  THREE PAINTER PROTOCOL — documentation page
+  https://seungjojeong.github.io/Three-Painter-Protocol/
+
+  Images live in /images beside this file. GitHub Pages is
+  case-sensitive, so the filenames must match exactly.
+
+  Nothing is outstanding.
+  ============================================================
+-->
+
+<title>Three Painter Protocol — Jesse Ash, Rebecca Fortnum, Seungjo Jeong</title>
+<meta name="description" content="Three Painter Protocol: twelve paintings made through a three-round exchange between three studios. The Transformation Gallery, London, 8–25 October 2026.">
+
+<link rel="canonical" href="https://seungjojeong.github.io/Three-Painter-Protocol/">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Three Painter Protocol">
+<meta property="og:description" content="Twelve paintings made through a three-round exchange between three studios. The Transformation Gallery, London, 8–25 October 2026.">
+<meta property="og:image" content="https://seungjojeong.github.io/Three-Painter-Protocol/images/three-painter-protocol-install-01.jpg">
+<meta property="og:url" content="https://seungjojeong.github.io/Three-Painter-Protocol/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "ExhibitionEvent",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition",
+      "name": "Three Painter Protocol",
+      "alternateName": "3 painter protocol",
+      "startDate": "2026-10-08",
+      "endDate": "2026-10-25",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "image": [
+        { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-poster-jeong" },
+        { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-poster-fortnum" },
+        { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-poster-ash" },
+        { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-01" },
+        { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-02" },
+        { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-03" },
+        { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-04" },
+        { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-05" },
+        { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-06" },
+        { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-07" },
+        { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-08" },
+        { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-09" },
+        { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-10" }
+      ],
+      "description": "An exhibition of paintings made through a three-round exchange between three studios. Each painter took another's painting as a source and answered it with a new painting; the source was then passed on and the process repeated, until the responses themselves became sources.",
+      "location": {
+        "@type": "Place",
+        "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#gallery",
+        "name": "The Transformation Gallery",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Arch 18 Valentia Place",
+          "addressLocality": "London",
+          "postalCode": "SW9 8PJ",
+          "addressCountry": "GB"
+        },
+        "sameAs": ["https://www.thetransformationgallery.co.uk/"]
+      },
+      "performer": [
+        { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#ash" },
+        { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#fortnum" },
+        { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" }
+      ],
+      "organizer": {
+        "@type": "Organization",
+        "name": "The Transformation Gallery",
+        "email": "thetransformationgallery@gmail.com"
+      },
+      "subEvent": [
+        { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#performance" },
+        { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#panel" }
+      ],
+      "url": "https://seungjojeong.github.io/Three-Painter-Protocol/",
+      "sameAs": ["https://www.thetransformationgallery.co.uk/post/three-painter-protocol"]
+    },
+
+    {
+      "@type": "PerformanceEvent",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#performance",
+      "name": "Performance led by Jesse Ash",
+      "startDate": "2026-10-08",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "description": "A performance led by Jesse Ash on the opening night of the exhibition.",
+      "performer": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#ash" },
+      "superEvent": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition" },
+      "location": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#gallery" }
+    },
+    {
+      "@type": "Event",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#panel",
+      "name": "Three Painter Protocol: panel discussion",
+      "startDate": "2026-12-15T18:00:00+00:00",
+      "endDate": "2026-12-15T20:00:00+00:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "description": "A panel discussion on this painting project.",
+      "superEvent": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition" },
+      "location": {
+        "@type": "Place",
+        "name": "Gorvy Lecture Theatre, Royal College of Art",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Battersea",
+          "addressLocality": "London",
+          "addressCountry": "GB"
+        }
+      },
+      "organizer": {
+        "@type": "CollegeOrUniversity",
+        "name": "Royal College of Art",
+        "url": "https://www.rca.ac.uk/"
+      }
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#ash",
+      "name": "Jesse Ash",
+      "jobTitle": "Artist, researcher and educator",
+      "description": "Artist working across painting, collage, writing, performance and ecological community projects. Senior Tutor in Painting at the Royal College of Art, and Reader in Fine Art and Ecological Practice. Not to be confused with James Ash, the media theorist.",
+      "sameAs": ["https://rca.ac.uk/more/staff/jesse-ash"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#fortnum",
+      "name": "Rebecca Fortnum",
+      "jobTitle": "Artist, writer and academic",
+      "description": "Artist and writer, Professor of Fine Art at Central Saint Martins, previously at Middlesex University, the Royal College of Art and the Glasgow School of Art.",
+      "sameAs": ["https://www.arts.ac.uk/research/ual-staff-researchers/rebecca-fortnum"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong",
+      "name": "Seungjo Jeong",
+      "alternateName": "Joe Jeong",
+      "jobTitle": "Artist and researcher",
+      "description": "Artist and researcher based in London, with a background in software engineering. His doctoral research, 'Painting Practice as Network: The Interoperability of Contemporary Painting', reconsiders the relation between a painting and its on-screen image.",
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "School of the Art Institute of Chicago" },
+        { "@type": "CollegeOrUniversity", "name": "Royal College of Art" }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/seungjo.jeong/",
+        "https://www.rca.ac.uk/research-innovation/research-degrees/research-students/seungjo-jeong/"
+      ]
+    },
+
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#ash-untitled",
+      "name": "Untitled",
+      "dateCreated": "2019",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#ash" },
+      "artform": "Painting",
+      "artMedium": "Oil paint",
+      "artworkSurface": "Board",
+      "height": { "@type": "QuantitativeValue", "value": 30, "unitCode": "CMT" },
+      "width":  { "@type": "QuantitativeValue", "value": 37, "unitCode": "CMT" },
+      "image": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-ash-untitled" },
+      "exhibitionEvent": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition" }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#ash-play-for-view-finding",
+      "isBasedOn": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong-amber" },
+      "name": "A Play for View Finding",
+      "dateCreated": "2026",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#ash" },
+      "artform": "Painting",
+      "artMedium": "Oil paint",
+      "artworkSurface": "Board",
+      "height": { "@type": "QuantitativeValue", "value": 88, "unitCode": "CMT" },
+      "width":  { "@type": "QuantitativeValue", "value": 66, "unitCode": "CMT" },
+      "image": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-ash-play-for-view-finding" },
+      "exhibitionEvent": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition" }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#ash-display-screen",
+      "isBasedOn": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#fortnum-prosopopoeia" },
+      "name": "Display (screen)",
+      "dateCreated": "2026",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#ash" },
+      "artform": "Painting",
+      "artMedium": "Oil paint",
+      "artworkSurface": "Board",
+      "height": { "@type": "QuantitativeValue", "value": 23, "unitCode": "CMT" },
+      "width":  { "@type": "QuantitativeValue", "value": 29, "unitCode": "CMT" },
+      "image": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-ash-display-screen" },
+      "exhibitionEvent": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition" }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#ash-display-dirty-linen",
+      "name": "Display (dirty linen)",
+      "dateCreated": "2026",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#ash" },
+      "artform": "Painting",
+      "artMedium": "Oil paint",
+      "artworkSurface": "Board",
+      "height": { "@type": "QuantitativeValue", "value": 25, "unitCode": "CMT" },
+      "width":  { "@type": "QuantitativeValue", "value": 27, "unitCode": "CMT" },
+      "image": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-ash-display-dirty-linen" },
+      "exhibitionEvent": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition" }
+    },
+
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#fortnum-prosopopoeia",
+      "name": "Prosopopoeia (Dressler, Nina Resch)",
+      "dateCreated": "2019",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#fortnum" },
+      "artform": "Painting",
+      "artMedium": "Oil paint",
+      "artworkSurface": "Gesso panel",
+      "description": "Each panel 25 x 20 cm.",
+      "height": { "@type": "QuantitativeValue", "value": 25, "unitCode": "CMT" },
+      "width":  { "@type": "QuantitativeValue", "value": 20, "unitCode": "CMT" },
+      "image": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-fortnum-prosopopoeia" },
+      "exhibitionEvent": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition" }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#fortnum-portrait-of-space",
+      "isBasedOn": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#ash-untitled" },
+      "name": "Portrait of Space (Jesse Ash & Lee Miller)",
+      "dateCreated": "2026",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#fortnum" },
+      "artform": "Painting",
+      "artMedium": "Oil paint",
+      "artworkSurface": "Gesso panel",
+      "description": "Two parts, each 20 x 15 cm.",
+      "height": { "@type": "QuantitativeValue", "value": 20, "unitCode": "CMT" },
+      "width":  { "@type": "QuantitativeValue", "value": 15, "unitCode": "CMT" },
+      "image": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-fortnum-portrait-of-space" },
+      "exhibitionEvent": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition" }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#fortnum-considering-sj-schema",
+      "isBasedOn": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong-amber" },
+      "name": "Considering SJ's schema (The Age of Bronze)",
+      "dateCreated": "2026",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#fortnum" },
+      "artform": "Painting",
+      "artMedium": "Oil paint",
+      "artworkSurface": "Gesso panel",
+      "description": "Two parts, each 25 x 20 cm.",
+      "height": { "@type": "QuantitativeValue", "value": 25, "unitCode": "CMT" },
+      "width":  { "@type": "QuantitativeValue", "value": 20, "unitCode": "CMT" },
+      "image": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-fortnum-considering-sj-schema" },
+      "exhibitionEvent": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition" }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#fortnum-age-of-bronze-ii",
+      "name": "Untitled (The Age of Bronze ii)",
+      "dateCreated": "2026",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#fortnum" },
+      "artform": "Painting",
+      "artMedium": "Watercolour, gouache and pencil",
+      "artworkSurface": "Paper",
+      "description": "Two parts, each 150 x 122 cm.",
+      "height": { "@type": "QuantitativeValue", "value": 150, "unitCode": "CMT" },
+      "width":  { "@type": "QuantitativeValue", "value": 122, "unitCode": "CMT" },
+      "image": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-fortnum-age-of-bronze-ii" },
+      "exhibitionEvent": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition" }
+    },
+
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong-amber",
+      "name": "Amber",
+      "dateCreated": "2022",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "artform": "Painting",
+      "artMedium": "Acrylic paint",
+      "artworkSurface": "Linen",
+      "height": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
+      "width":  { "@type": "QuantitativeValue", "value": 40, "unitCode": "CMT" },
+      "image": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-jeong-amber" },
+      "exhibitionEvent": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition" }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong-sitter",
+      "isBasedOn": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#fortnum-prosopopoeia" },
+      "name": "Sitter",
+      "dateCreated": "2026",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "artform": "Painting",
+      "artMedium": "Acrylic paint",
+      "artworkSurface": "Linen",
+      "description": "Two parts, each 45 x 35 cm.",
+      "height": { "@type": "QuantitativeValue", "value": 45, "unitCode": "CMT" },
+      "width":  { "@type": "QuantitativeValue", "value": 35, "unitCode": "CMT" },
+      "image": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-jeong-sitter" },
+      "exhibitionEvent": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition" }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong-in-transit",
+      "isBasedOn": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#ash-untitled" },
+      "name": "In Transit",
+      "dateCreated": "2026",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "artform": "Painting",
+      "artMedium": "Acrylic paint",
+      "artworkSurface": "Linen",
+      "height": { "@type": "QuantitativeValue", "value": 40, "unitCode": "CMT" },
+      "width":  { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
+      "image": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-jeong-in-transit" },
+      "exhibitionEvent": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition" }
+    },
+    {
+      "@type": "VisualArtwork",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong-age-of-bronze",
+      "isBasedOn": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#fortnum-considering-sj-schema" },
+      "name": "The Age of Bronze",
+      "dateCreated": "2026",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "artform": "Painting",
+      "artMedium": "Acrylic paint",
+      "artworkSurface": "Linen",
+      "height": { "@type": "QuantitativeValue", "value": 160, "unitCode": "CMT" },
+      "width":  { "@type": "QuantitativeValue", "value": 40, "unitCode": "CMT" },
+      "image": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-jeong-age-of-bronze" },
+      "exhibitionEvent": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition" }
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-ash-untitled",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/work-ash-untitled-2019.jpg",
+      "caption": "Jesse Ash, Untitled, 2019. Oil on board, 30 x 37 cm.",
+      "description": "A black form like a torn curtain hangs across the top of a tawny ochre landscape, with a pale green-white field below. Small dots of colour are scattered along the black edges.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "copyrightNotice": "Work © Jesse Ash. Photograph © 2026 Seungjo Jeong."
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-ash-play-for-view-finding",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/work-ash-a-play-for-view-finding-2026.jpg",
+      "caption": "Jesse Ash, A Play for View Finding, 2026. Oil on board, 88 x 66 cm.",
+      "description": "Vertical panels in soft greens, pinks and greys overlap like sheets of tracing paper. An orange band sits at the top left, a pale blue-white shape falls through the upper centre, and clusters of red, yellow and deep purple gather at the right.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "copyrightNotice": "Work © Jesse Ash. Photograph © 2026 Seungjo Jeong."
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-ash-display-screen",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/work-ash-display-screen-2026.jpg",
+      "caption": "Jesse Ash, Display (screen), 2026. Oil on board, 23 x 29 cm.",
+      "description": "A pale olive-green scene of fallen branches and grass, interrupted at its centre by a blank cream shape. A painted white border carries the faint instruction “fold forward”; the whole sits in a dark wooden frame.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "copyrightNotice": "Work © Jesse Ash. Photograph © 2026 Seungjo Jeong."
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-ash-display-dirty-linen",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/work-ash-display-dirty-linen-2026.jpg",
+      "caption": "Jesse Ash, Display (dirty linen), 2026. Oil on board, 25 x 27 cm.",
+      "description": "Painted in the form of a Polaroid, with a white border and a handwritten note at the lower right. Within it, cloths in orange, yellow, red, teal and dark brown hang from the branches of a tree in bright green foliage.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "copyrightNotice": "Work © Jesse Ash. Photograph © 2026 Seungjo Jeong."
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-fortnum-prosopopoeia",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/work-fortnum-prosopopoeia-2019.jpg",
+      "caption": "Rebecca Fortnum, Prosopopoeia (Dressler, Nina Resch), 2019. Oil on gesso panel, 25 x 20 cm each panel.",
+      "description": "Two panels. At left, a head with copper-red hair and a pale, downcast face against deep green; at right, a grey panel faintly drawn with interlacing linear figures.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "copyrightNotice": "Work © Rebecca Fortnum. Photograph © 2026 Seungjo Jeong."
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-fortnum-portrait-of-space",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/work-fortnum-portrait-of-space-2026.jpg",
+      "caption": "Rebecca Fortnum, Portrait of Space (Jesse Ash & Lee Miller), 2026. Oil on gesso panel, two parts, each 20 x 15 cm.",
+      "description": "Two small panels. At left, a pale conical form opens through dark olive and deep navy; at right, an entirely red landscape of clouded sky above still water.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "copyrightNotice": "Work © Rebecca Fortnum. Photograph © 2026 Seungjo Jeong."
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-fortnum-considering-sj-schema",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/work-fortnum-considering-sj-schema-2026.jpg",
+      "caption": "Rebecca Fortnum, Considering SJ's schema (The Age of Bronze), 2026. Oil on gesso panel, two parts, each 25 x 20 cm.",
+      "description": "Two small panels in greys and black, each showing the same standing figure in front of a painted rectangular sheet: one against a warm pale ground, the other against dark grey.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "copyrightNotice": "Work © Rebecca Fortnum. Photograph © 2026 Seungjo Jeong."
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-fortnum-age-of-bronze-ii",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/work-fortnum-age-of-bronze-ii-2026.jpg",
+      "caption": "Rebecca Fortnum, Untitled (The Age of Bronze ii), 2026. Watercolour, gouache and pencil on paper, two parts, each 150 x 122 cm.",
+      "description": "Two large sheets of paper pinned to the wall, each carrying a standing nude figure in washed blue-green — one paler, one deeper in tone — with one arm raised above the head and the other bent upward, after Rodin’s sculpture.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "copyrightNotice": "Work © Rebecca Fortnum. Photograph © 2026 Seungjo Jeong."
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-jeong-amber",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/work-jeong-amber-2022.jpg",
+      "caption": "Seungjo Jeong, Amber, 2022. Acrylic on linen, 50 x 40 cm.",
+      "description": "A yellow and orange border opens inward onto two trapezoids of bare linen — one deep, one shallow — with a small disc of linen left unpainted at the top. The weave of the support is visible wherever the paint stops.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "copyrightNotice": "Work and photograph © Seungjo Jeong."
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-jeong-sitter",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/work-jeong-sitter-2026.jpg",
+      "caption": "Seungjo Jeong, Sitter, 2026. Acrylic on linen, two parts, each 45 x 35 cm.",
+      "description": "Two panels hung one above the other, each holding a blue trapezoid on bare linen between bands of pink, grey and green. The lower panel inverts the arrangement of the upper.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "copyrightNotice": "Work and photograph © Seungjo Jeong."
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-jeong-in-transit",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/work-jeong-in-transit-2026.jpg",
+      "caption": "Seungjo Jeong, In Transit, 2026. Acrylic on linen, 40 x 50 cm.",
+      "description": "A pale blue-green form rises against a black, thickly worked ground scattered with small dots of colour, broken at the lower right by a dark circular void.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "copyrightNotice": "Work and photograph © Seungjo Jeong."
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-jeong-age-of-bronze",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/work-jeong-age-of-bronze-2026.jpg",
+      "caption": "Seungjo Jeong, The Age of Bronze, 2026. Acrylic on linen, 160 x 40 cm.",
+      "description": "A tall narrow column of horizontal bands — white, ochre, charcoal, blue-grey — each softening into the next where they meet.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "copyrightNotice": "Work and photograph © Seungjo Jeong."
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-poster-jeong",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/three-painter-protocol-poster-jeong.jpg",
+      "caption": "Exhibition flyer for Three Painter Protocol, with a detail from Seungjo Jeong’s In Transit.",
+      "description": "A detail of deep blue and black paint scattered with small dots of colour and broken by a dark circular void. The title is set in pale blue, beside an olive numeral 3.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Poster designed by Seungjo Jeong",
+      "copyrightNotice": "Work © Seungjo Jeong. Poster © 2026 Seungjo Jeong.",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "about": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition" }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-poster-fortnum",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/three-painter-protocol-poster-fortnum.jpg",
+      "caption": "Exhibition flyer for Three Painter Protocol, with a detail from Rebecca Fortnum’s Portrait of Space (Jesse Ash & Lee Miller).",
+      "description": "Two panels side by side: an all-red landscape of clouded sky above still water at left, and a dark olive and navy form at right. The title is set in warm grey, beside a deep blue numeral 3.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Poster designed by Seungjo Jeong",
+      "copyrightNotice": "Work © Rebecca Fortnum. Poster © 2026 Seungjo Jeong.",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "about": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition" }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-poster-ash",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/three-painter-protocol-poster-ash.jpg",
+      "caption": "Exhibition flyer for Three Painter Protocol, with a detail from Jesse Ash’s Display (screen).",
+      "description": "A detail of pale olive-green paint, fallen branches and a blank cream shape, with a faintly pencilled instruction along the top edge. The title is set across it in white, beside a green numeral 3.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Poster designed by Seungjo Jeong",
+      "copyrightNotice": "Work © Jesse Ash. Poster © 2026 Seungjo Jeong.",
+      "creator": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong" },
+      "about": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition" }
+    },
+
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-01",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/three-painter-protocol-install-01.jpg",
+      "description": "Looking across the gallery: a group of seven small paintings on the free-standing partition wall at left, a single small painting on the whitewashed brick wall beyond, and a draped cloth on a branch standing in the foreground.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": {
+        "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong"
+      },
+      "copyrightNotice": "© 2026 Seungjo Jeong",
+      "representativeOfPage": true
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-02",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/three-painter-protocol-install-02.jpg",
+      "description": "The partition wall hung with seven works: two landscape-format paintings at left, a pair of small panels above, a large soft-toned abstract at centre, an orange and grey geometric painting, and two small grisaille figure panels at upper right.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": {
+        "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong"
+      },
+      "copyrightNotice": "© 2026 Seungjo Jeong"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-03",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/three-painter-protocol-install-03.jpg",
+      "description": "Across the corner of the gallery, with the draped cloth and branch at left, three works on the far wall, and the partition wall group seen edge-on at right.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": {
+        "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong"
+      },
+      "copyrightNotice": "© 2026 Seungjo Jeong"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-04",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/three-painter-protocol-install-04.jpg",
+      "description": "Three works on the far wall: a small framed work in pale green, a two-panel painting pairing a red-haired head with a pale drawn panel, and a vertically stacked pair of geometric panels in blue, pink and grey.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": {
+        "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong"
+      },
+      "copyrightNotice": "© 2026 Seungjo Jeong"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-05",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/three-painter-protocol-install-05.jpg",
+      "description": "Four works hung as a group: a black and ochre landscape, a blue and black painting with a dark circular void, and two small panels above in dark green and red.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": {
+        "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong"
+      },
+      "copyrightNotice": "© 2026 Seungjo Jeong"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-06",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/three-painter-protocol-install-06.jpg",
+      "description": "Down the length of the gallery, with the partition wall group at left, a single small painting centred on the whitewashed brick end wall, and two large works on paper showing blue-green figures at right.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": {
+        "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong"
+      },
+      "copyrightNotice": "© 2026 Seungjo Jeong"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-07",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/three-painter-protocol-install-07.jpg",
+      "description": "Two large works on paper, each showing a standing blue-green figure, pinned to the wall beside the gallery entrance.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": {
+        "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong"
+      },
+      "copyrightNotice": "© 2026 Seungjo Jeong"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-08",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/three-painter-protocol-install-08.jpg",
+      "description": "Across the corner, with the group of paintings on the partition wall at left and the small painting on the whitewashed brick wall at right.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": {
+        "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong"
+      },
+      "copyrightNotice": "© 2026 Seungjo Jeong"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-09",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/three-painter-protocol-install-09.jpg",
+      "description": "From the entrance end of the gallery, with three works on the far wall and a tall striped vertical painting on the return wall at right.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": {
+        "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong"
+      },
+      "copyrightNotice": "© 2026 Seungjo Jeong"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#img-install-10",
+      "contentUrl": "https://seungjojeong.github.io/Three-Painter-Protocol/images/three-painter-protocol-install-10.jpg",
+      "description": "Seen through the glass doors of The Transformation Gallery, with the exhibition poster, the tall striped vertical painting, and the partition wall group visible inside.",
+      "license": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "acquireLicensePage": "https://seungjojeong.github.io/Three-Painter-Protocol/rights.html",
+      "creditText": "Photograph by Seungjo Jeong",
+      "creator": {
+        "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#jeong"
+      },
+      "copyrightNotice": "© 2026 Seungjo Jeong"
+    },
+
+    {
+      "@type": "VideoObject",
+      "name": "Three Painter Protocol — exhibition documentation",
+      "description": "Documentation of the exhibition at The Transformation Gallery, October 2026.",
+      "uploadDate": "2026-10-31",
+      "thumbnailUrl": "https://img.youtube.com/vi/Y1Y0AhfnQSg/maxresdefault.jpg",
+      "embedUrl": "https://www.youtube.com/embed/Y1Y0AhfnQSg",
+      "url": "https://www.youtube.com/shorts/Y1Y0AhfnQSg",
+      "about": { "@id": "https://seungjojeong.github.io/Three-Painter-Protocol/#exhibition" }
+    }
+
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --paper: #faf9f7;
+    --rule: #d8d4cc;
+    --quiet: #6b6560;
+    --measure: 34rem;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 1.0625rem/1.65 Charter, "Iowan Old Style", Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 60rem; margin: 0 auto; padding: 5rem 1.5rem 7rem; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 2.5rem; margin-bottom: 3.5rem; }
+  h1 {
+    font-size: clamp(2rem, 5.5vw, 3.25rem);
+    line-height: 1.08;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    margin: 0 0 1.25rem;
+  }
+  .byline { font-size: 1.0625rem; margin: 0 0 0.4rem; }
+  .meta { color: var(--quiet); font-size: 0.9375rem; margin: 0 0 0.25rem; }
+  h2 {
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: var(--quiet);
+    margin: 4.5rem 0 1.25rem;
+  }
+  h3 {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    margin: 3rem 0 0;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { max-width: var(--measure); margin: 0 0 1.25rem; }
+  a { color: inherit; text-decoration-color: var(--rule); text-underline-offset: 0.2em; }
+  a:hover { text-decoration-color: var(--ink); }
+
+  figure { margin: 0; }
+  figure img { width: 100%; height: auto; display: block; background: #eceae6; }
+  figcaption { font-size: 0.875rem; line-height: 1.5; color: var(--quiet); margin-top: 0.7rem; }
+  figcaption .t { font-style: italic; color: var(--ink); }
+
+  /* individual works, grouped by artist */
+  /* A uniform square box levels the rows. object-fit: contain means nothing
+     is cropped: landscape works sit width-constrained, portrait ones
+     height-constrained, each centred in its own box. */
+  .works { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 2.75rem 2rem; margin: 1.75rem 0 0; align-items: start; }
+  .works img { aspect-ratio: 1 / 1; object-fit: contain; background: var(--paper); }
+
+  /* installation views, wider. A uniform 3:2 box keeps the rows aligned;
+     object-fit: contain means nothing is cropped, so the one portrait-format
+     shot sits centred in its box rather than blowing out its row. */
+  .installs { display: grid; grid-template-columns: 1fr; gap: 3rem 2rem; margin: 0; }
+  @media (min-width: 46rem) { .installs { grid-template-columns: 1fr 1fr; } }
+  .installs img { aspect-ratio: 3 / 2; object-fit: contain; background: var(--paper); }
+
+  /* posters, three up */
+  .posters { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 2.5rem 2rem; margin: 0; align-items: start; }
+
+  h3 + p { margin-top: 1.25rem; }
+  .rel { font-size:0.8125rem; line-height:1.5; color:var(--quiet); margin-top:0.45rem; }
+  .rel a { color:inherit; }
+  .works figure { scroll-margin-top: 2rem; }
+
+  footer { margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--rule); font-size: 0.875rem; color: var(--quiet); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Three Painter Protocol</h1>
+    <p class="byline">Jesse Ash, Rebecca Fortnum, Seungjo Jeong</p>
+    <p class="meta"><a href="https://www.thetransformationgallery.co.uk/">The Transformation Gallery</a>, Arch 18 Valentia Place, London SW9 8PJ</p>
+    <p class="meta">8&ndash;25 October 2026 &middot; Thursday to Sunday, 14:00&ndash;18:00</p>
+  </header>
+
+  <h2>The exhibition</h2>
+  <p>Three painters circulated finished paintings between their studios and answered them with new work. Taking another&rsquo;s painting as a source, each painter made a response; the source was then passed on and the process repeated, until in the final round the responses themselves became sources.</p>
+  <p>Each response was made in the presence of the physical painting rather than a photograph of it &mdash; a constraint that shaped what could be noticed and what could be answered. Nine new paintings were made through the exchange, and were shown with the three existing paintings that began it: twelve works on view in all.</p>
+  <p>The accompanying text, &ldquo;Opening to the Unexpected: Nine Notes on a Protocol-Based Practice&rdquo;, was written by Emma Cocker, writer-artist and Associate Professor in Fine Art at Nottingham Trent University.</p>
+  <p>The opening reception was held on Thursday 8 October 2026, 18:00&ndash;21:00. <a href="https://www.thetransformationgallery.co.uk/post/three-painter-protocol">The gallery&rsquo;s page for the exhibition</a> has further details.</p>
+
+  <h2>Exhibition flyers</h2>
+  <p>Three variations of the exhibition flyer were produced, each using a detail from one of the three painters&rsquo; work.</p>
+  <div class="posters">
+    <figure>
+      <img src="images/three-painter-protocol-poster-ash.jpg"
+           loading="lazy"
+           alt="A detail of pale olive-green paint, fallen branches and a blank cream shape, with a faintly pencilled instruction along the top edge. The title is set across it in white, beside a green numeral 3.">
+      <figcaption>Exhibition flyer, with a detail from <a href="#ash-display-screen">Jesse Ash&rsquo;s <em>Display (screen)</em></a>.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/three-painter-protocol-poster-fortnum.jpg"
+           loading="lazy"
+           alt="Two panels side by side: an all-red landscape of clouded sky above still water at left, and a dark olive and navy form at right. The title is set in warm grey, beside a deep blue numeral 3.">
+      <figcaption>Exhibition flyer, with a detail from <a href="#fortnum-portrait-of-space">Rebecca Fortnum&rsquo;s <em>Portrait of Space (Jesse Ash &amp; Lee Miller)</em></a>.</figcaption>
+    </figure>
+    <figure>
+      <img src="images/three-painter-protocol-poster-jeong.jpg"
+           loading="lazy"
+           alt="A detail of deep blue and black paint scattered with small dots of colour and broken by a dark circular void. The title is set in pale blue, beside an olive numeral 3.">
+      <figcaption>Exhibition flyer, with a detail from <a href="#jeong-in-transit">Seungjo Jeong&rsquo;s <em>In Transit</em></a>.</figcaption>
+    </figure>
+  </div>
+
+
+  <h2>Installation views</h2>
+  <div class="installs">
+    <figure>
+      <img src="images/three-painter-protocol-install-01.jpg"
+           loading="lazy"
+           alt="Looking across the gallery: a group of seven small paintings on the free-standing partition wall at left, a single small painting on the whitewashed brick wall beyond, and a draped cloth on a branch standing in the foreground.">
+    </figure>
+    <figure>
+      <img src="images/three-painter-protocol-install-02.jpg"
+           loading="lazy"
+           alt="The partition wall hung with seven works: two landscape-format paintings at left, a pair of small panels above, a large soft-toned abstract at centre, an orange and grey geometric painting, and two small grisaille figure panels at upper right.">
+    </figure>
+    <figure>
+      <img src="images/three-painter-protocol-install-03.jpg"
+           loading="lazy"
+           alt="Across the corner of the gallery, with the draped cloth and branch at left, three works on the far wall, and the partition wall group seen edge-on at right.">
+    </figure>
+    <figure>
+      <img src="images/three-painter-protocol-install-04.jpg"
+           loading="lazy"
+           alt="Three works on the far wall: a small framed work in pale green, a two-panel painting pairing a red-haired head with a pale drawn panel, and a vertically stacked pair of geometric panels in blue, pink and grey.">
+    </figure>
+    <figure>
+      <img src="images/three-painter-protocol-install-05.jpg"
+           loading="lazy"
+           alt="Four works hung as a group: a black and ochre landscape, a blue and black painting with a dark circular void, and two small panels above in dark green and red.">
+    </figure>
+    <figure>
+      <img src="images/three-painter-protocol-install-06.jpg"
+           loading="lazy"
+           alt="Down the length of the gallery, with the partition wall group at left, a single small painting centred on the whitewashed brick end wall, and two large works on paper showing blue-green figures at right.">
+    </figure>
+    <figure>
+      <img src="images/three-painter-protocol-install-07.jpg"
+           loading="lazy"
+           alt="Two large works on paper, each showing a standing blue-green figure, pinned to the wall beside the gallery entrance.">
+    </figure>
+    <figure>
+      <img src="images/three-painter-protocol-install-08.jpg"
+           loading="lazy"
+           alt="Across the corner, with the group of paintings on the partition wall at left and the small painting on the whitewashed brick wall at right.">
+    </figure>
+    <figure>
+      <img src="images/three-painter-protocol-install-09.jpg"
+           loading="lazy"
+           alt="From the entrance end of the gallery, with three works on the far wall and a tall striped vertical painting on the return wall at right.">
+    </figure>
+    <figure>
+      <img src="images/three-painter-protocol-install-10.jpg"
+           loading="lazy"
+           alt="Seen through the glass doors of The Transformation Gallery, with the exhibition poster, the tall striped vertical painting, and the partition wall group visible inside.">
+    </figure>
+  </div>
+
+  <h2>Works</h2>
+
+  <h3>Jesse Ash</h3>
+  <div class="works">
+    <figure id="ash-untitled">
+      <img src="images/work-ash-untitled-2019.jpg"
+           alt="A black form like a torn curtain hangs across the top of a tawny ochre landscape, with a pale green-white field below. Small dots of colour are scattered along the black edges.">
+      <figcaption><span class="t">Untitled</span>, 2019<br>30 &times; 37 cm &middot; oil on board</figcaption>
+      <p class="rel">Answered by <a href="#jeong-in-transit"><em>In Transit</em></a> and <a href="#fortnum-portrait-of-space"><em>Portrait of Space (Jesse Ash &amp; Lee Miller)</em></a>.</p>
+    </figure>
+    <figure id="ash-play-for-view-finding">
+      <img src="images/work-ash-a-play-for-view-finding-2026.jpg"
+           alt="Vertical panels in soft greens, pinks and greys overlap like sheets of tracing paper. An orange band sits at the top left, a pale blue-white shape falls through the upper centre, and clusters of red, yellow and deep purple gather at the right.">
+      <figcaption><span class="t">A Play for View Finding</span>, 2026<br>88 &times; 66 cm &middot; oil on board</figcaption>
+      <p class="rel">In response to <a href="#jeong-amber"><em>Amber</em></a>.</p>
+    </figure>
+    <figure id="ash-display-screen">
+      <img src="images/work-ash-display-screen-2026.jpg"
+           alt="A pale olive-green scene of fallen branches and grass, interrupted at its centre by a blank cream shape. A painted white border carries the faint instruction “fold forward”; the whole sits in a dark wooden frame.">
+      <figcaption><span class="t">Display (screen)</span>, 2026<br>23 &times; 29 cm &middot; oil on board</figcaption>
+      <p class="rel">In response to <a href="#fortnum-prosopopoeia"><em>Prosopopoeia (Dressler, Nina Resch)</em></a>.</p>
+    </figure>
+    <figure id="ash-display-dirty-linen">
+      <img src="images/work-ash-display-dirty-linen-2026.jpg"
+           alt="Painted in the form of a Polaroid, with a white border and a handwritten note at the lower right. Within it, cloths in orange, yellow, red, teal and dark brown hang from the branches of a tree in bright green foliage.">
+      <figcaption><span class="t">Display (dirty linen)</span>, 2026<br>25 &times; 27 cm &middot; oil on board</figcaption>
+      <p class="rel">Made in response to the exchange as a whole, rather than to a single painting.</p>
+    </figure>
+  </div>
+
+  <h3>Rebecca Fortnum</h3>
+  <div class="works">
+    <figure id="fortnum-prosopopoeia">
+      <img src="images/work-fortnum-prosopopoeia-2019.jpg"
+           alt="Two panels. At left, a head with copper-red hair and a pale, downcast face against deep green; at right, a grey panel faintly drawn with interlacing linear figures.">
+      <figcaption><span class="t">Prosopopoeia (Dressler, Nina Resch)</span>, 2019<br>25 &times; 20 cm each panel &middot; oil on gesso panel</figcaption>
+      <p class="rel">Answered by <a href="#jeong-sitter"><em>Sitter</em></a> and <a href="#ash-display-screen"><em>Display (screen)</em></a>.</p>
+    </figure>
+    <figure id="fortnum-portrait-of-space">
+      <img src="images/work-fortnum-portrait-of-space-2026.jpg"
+           alt="Two small panels. At left, a pale conical form opens through dark olive and deep navy; at right, an entirely red landscape of clouded sky above still water.">
+      <figcaption><span class="t">Portrait of Space (Jesse Ash &amp; Lee Miller)</span>, 2026<br>20 &times; 15 cm each, 2 parts &middot; oil on gesso panel</figcaption>
+      <p class="rel">In response to <a href="#ash-untitled"><em>Untitled</em></a>.</p>
+    </figure>
+    <figure id="fortnum-considering-sj-schema">
+      <img src="images/work-fortnum-considering-sj-schema-2026.jpg"
+           alt="Two small panels in greys and black, each showing the same standing figure in front of a painted rectangular sheet: one against a warm pale ground, the other against dark grey.">
+      <figcaption><span class="t">Considering SJ&rsquo;s schema (The Age of Bronze)</span>, 2026<br>25 &times; 20 cm each, 2 parts &middot; oil on gesso panel</figcaption>
+      <p class="rel">In response to <a href="#jeong-amber"><em>Amber</em></a>. Answered by <a href="#jeong-age-of-bronze"><em>The Age of Bronze</em></a>.</p>
+    </figure>
+    <figure id="fortnum-age-of-bronze-ii">
+      <img src="images/work-fortnum-age-of-bronze-ii-2026.jpg"
+           alt="Two large sheets of paper pinned to the wall, each carrying a standing nude figure in washed blue-green — one paler, one deeper in tone — with one arm raised above the head and the other bent upward, after Rodin’s sculpture.">
+      <figcaption><span class="t">Untitled (The Age of Bronze ii)</span>, 2026<br>150 &times; 122 cm each, 2 parts &middot; watercolour, gouache and pencil on paper</figcaption>
+      <p class="rel">Made in response to the exchange as a whole, rather than to a single painting.</p>
+    </figure>
+  </div>
+
+  <h3>Seungjo Jeong</h3>
+  <div class="works">
+    <figure id="jeong-amber">
+      <img src="images/work-jeong-amber-2022.jpg"
+           alt="A yellow and orange border opens inward onto two trapezoids of bare linen — one deep, one shallow — with a small disc of linen left unpainted at the top. The weave of the support is visible wherever the paint stops.">
+      <figcaption><span class="t">Amber</span>, 2022<br>50 &times; 40 cm &middot; acrylic on linen</figcaption>
+      <p class="rel">Answered by <a href="#ash-play-for-view-finding"><em>A Play for View Finding</em></a> and <a href="#fortnum-considering-sj-schema"><em>Considering SJ’s schema (The Age of Bronze)</em></a>.</p>
+    </figure>
+    <figure id="jeong-sitter">
+      <img src="images/work-jeong-sitter-2026.jpg"
+           alt="Two panels hung one above the other, each holding a blue trapezoid on bare linen between bands of pink, grey and green. The lower panel inverts the arrangement of the upper.">
+      <figcaption><span class="t">Sitter</span>, 2026<br>45 &times; 35 cm each, 2 parts &middot; acrylic on linen</figcaption>
+      <p class="rel">In response to <a href="#fortnum-prosopopoeia"><em>Prosopopoeia (Dressler, Nina Resch)</em></a>.</p>
+    </figure>
+    <figure id="jeong-in-transit">
+      <img src="images/work-jeong-in-transit-2026.jpg"
+           alt="A pale blue-green form rises against a black, thickly worked ground scattered with small dots of colour, broken at the lower right by a dark circular void.">
+      <figcaption><span class="t">In Transit</span>, 2026<br>40 &times; 50 cm &middot; acrylic on linen</figcaption>
+      <p class="rel">In response to <a href="#ash-untitled"><em>Untitled</em></a>.</p>
+    </figure>
+    <figure id="jeong-age-of-bronze">
+      <img src="images/work-jeong-age-of-bronze-2026.jpg"
+           alt="A tall narrow column of horizontal bands — white, ochre, charcoal, blue-grey — each softening into the next where they meet.">
+      <figcaption><span class="t">The Age of Bronze</span>, 2026<br>160 &times; 40 cm &middot; acrylic on linen</figcaption>
+      <p class="rel">In response to <a href="#fortnum-considering-sj-schema"><em>Considering SJ’s schema (The Age of Bronze)</em></a>.</p>
+    </figure>
+  </div>
+
+  <h3>Performance</h3>
+  <p>There was a performance led by Jesse Ash on the opening night.</p>
+
+  <h2>Panel discussion</h2>
+  <p>A panel discussion on this painting project takes place on 15 December 2026, 6&ndash;8pm, at the Gorvy Lecture Theatre, Royal College of Art, Battersea.</p>
+
+  <h2>Exhibition walkthrough</h2>
+  <p><a href="https://www.youtube.com/shorts/Y1Y0AhfnQSg">youtube.com/shorts/Y1Y0AhfnQSg</a></p>
+
+  <footer>
+    <p>Works &copy; the artists. All photographs &copy; 2026 Seungjo Jeong. See <a href="rights.html">rights and permissions</a>.</p>
+  </footer>
+
+</div>
+</body>
+</html>
