@@ -717,45 +717,25 @@
      image takes its own height and every caption sits the same distance from
      the picture above it. */
   @media (max-width: 34rem) {
-    .works { --col: calc(100vw - 3rem); }
-    /* Each figure is as wide as its own picture, so the caption wraps to the
-       width of the work rather than the width of the column. Without this a
-       small panel sits dwarfed beneath its own title. */
-    .works figure { margin-inline: auto; }
     .works img {
       aspect-ratio: auto;
+      /* and a ceiling, so a tall work doesn't run off the screen. Width is
+         released with it: the image narrows to meet the cap instead of being
+         letterboxed, which keeps its proportions honest — a work three times
+         as tall as it is wide ends up narrow on the page, as it should. */
       width: auto;
       max-width: 100%;
+      max-height: 78vh;
+      /* only an image that narrowed to meet the ceiling is less than the
+         full column, so only those two centre; the rest are unaffected */
       margin-inline: auto;
     }
-    /* Each work's longest side is set from the painting's real longest
-       dimension, compressed to the power 0.4 so that the smallest panels stay
-       legible beside a work nine times their size. The 244 cm Age of Bronze II
-       fills the column; everything else follows from it. */
-    #ash-display-dirty-linen { width: calc(var(--col) * 0.517); }
-    #ash-display-dirty-linen img { max-height: calc(var(--col) * 0.517); }
-    #ash-display-screen { width: calc(var(--col) * 0.528); }
-    #ash-display-screen img { max-height: calc(var(--col) * 0.528); }
-    #fortnum-portrait-of-space { width: calc(var(--col) * 0.533); }
-    #fortnum-portrait-of-space img { max-height: calc(var(--col) * 0.533); }
-    #ash-untitled { width: calc(var(--col) * 0.568); }
-    #ash-untitled img { max-height: calc(var(--col) * 0.568); }
-    #fortnum-prosopopoeia { width: calc(var(--col) * 0.581); }
-    #fortnum-prosopopoeia img { max-height: calc(var(--col) * 0.581); }
-    #fortnum-considering-sj-schema { width: calc(var(--col) * 0.581); }
-    #fortnum-considering-sj-schema img { max-height: calc(var(--col) * 0.581); }
-    #jeong-amber { width: calc(var(--col) * 0.513); }
-    #jeong-amber img { max-height: calc(var(--col) * 0.622); }
-    #jeong-in-transit { width: calc(var(--col) * 0.622); }
-    #jeong-in-transit img { max-height: calc(var(--col) * 0.622); }
-    #ash-play-for-view-finding { width: calc(var(--col) * 0.576); }
-    #ash-play-for-view-finding img { max-height: calc(var(--col) * 0.736); }
-    #jeong-sitter { width: calc(var(--col) * 0.385); }
-    #jeong-sitter img { max-height: calc(var(--col) * 0.741); }
-    #jeong-age-of-bronze { width: calc(var(--col) * 0.361); }
-    #jeong-age-of-bronze img { max-height: calc(var(--col) * 0.881); }
-    #fortnum-age-of-bronze-ii { width: calc(var(--col) * 1.000); }
-    #fortnum-age-of-bronze-ii img { max-height: calc(var(--col) * 1.000); }
+    /* Amber is 50 x 40 cm and In Transit is 40 x 50 — the same painting size,
+       turned. Constrained only by column width, the portrait one gets the
+       taller box and reads as the larger work. Capping its height at the
+       column width makes the longest side of each the same, so equal works
+       occupy equal area whichever way up they are. */
+    #jeong-amber img { max-height: calc(100vw - 3rem); }
   }
 
   /* installation views, wider. A uniform 3:2 box keeps the rows aligned;
