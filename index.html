@@ -717,25 +717,30 @@
      image takes its own height and every caption sits the same distance from
      the picture above it. */
   @media (max-width: 34rem) {
+    .works { --col: calc(100vw - 3rem); }
     .works img {
       aspect-ratio: auto;
-      /* and a ceiling, so a tall work doesn't run off the screen. Width is
-         released with it: the image narrows to meet the cap instead of being
-         letterboxed, which keeps its proportions honest — a work three times
-         as tall as it is wide ends up narrow on the page, as it should. */
       width: auto;
       max-width: 100%;
       max-height: 78vh;
-      /* only an image that narrowed to meet the ceiling is less than the
-         full column, so only those two centre; the rest are unaffected */
       margin-inline: auto;
     }
-    /* Amber is 50 x 40 cm and In Transit is 40 x 50 — the same painting size,
-       turned. Constrained only by column width, the portrait one gets the
-       taller box and reads as the larger work. Capping its height at the
-       column width makes the longest side of each the same, so equal works
-       occupy equal area whichever way up they are. */
-    #jeong-amber img { max-height: calc(100vw - 3rem); }
+    /* Each work's longest side is set from the painting's real longest
+       dimension, compressed to the power 0.4 so that the smallest panels stay
+       legible beside a work nine times their size. The 244 cm Age of Bronze II
+       fills the column; everything else follows from it. */
+    #ash-display-dirty-linen img { max-width: calc(var(--col) * 0.415); max-height: calc(var(--col) * 0.415); }
+    #ash-display-screen img { max-width: calc(var(--col) * 0.427); max-height: calc(var(--col) * 0.427); }
+    #fortnum-portrait-of-space img { max-width: calc(var(--col) * 0.432); max-height: calc(var(--col) * 0.432); }
+    #ash-untitled img { max-width: calc(var(--col) * 0.470); max-height: calc(var(--col) * 0.470); }
+    #fortnum-prosopopoeia img { max-width: calc(var(--col) * 0.485); max-height: calc(var(--col) * 0.485); }
+    #fortnum-considering-sj-schema img { max-width: calc(var(--col) * 0.485); max-height: calc(var(--col) * 0.485); }
+    #jeong-amber img { max-width: calc(var(--col) * 0.530); max-height: calc(var(--col) * 0.530); }
+    #jeong-in-transit img { max-width: calc(var(--col) * 0.530); max-height: calc(var(--col) * 0.530); }
+    #ash-play-for-view-finding img { max-width: calc(var(--col) * 0.665); max-height: calc(var(--col) * 0.665); }
+    #jeong-sitter img { max-width: calc(var(--col) * 0.671); max-height: calc(var(--col) * 0.671); }
+    #jeong-age-of-bronze img { max-width: calc(var(--col) * 0.845); max-height: calc(var(--col) * 0.845); }
+    #fortnum-age-of-bronze-ii img { max-width: calc(var(--col) * 1.000); max-height: calc(var(--col) * 1.000); }
   }
 
   /* installation views, wider. A uniform 3:2 box keeps the rows aligned;
