@@ -796,7 +796,10 @@
                   width: auto; height: auto; object-fit: contain; }
   #lightbox figcaption { color: var(--quiet); font-size: 0.8125rem;
                          text-align: center; max-width: 40rem; margin: 0;
-                         white-space: pre-line; line-height: 1.5; }
+                         line-height: 1.6; }
+  #lightbox figcaption .who { display: block; color: var(--ink);
+                              font-size: 0.9375rem; margin-bottom: 0.1rem; }
+  #lightbox figcaption .t { font-style: italic; color: var(--ink); }
   #lightbox button {
     position: absolute; top: 1rem; right: 1.25rem;
     background: none; border: 0; color: var(--quiet);
@@ -942,7 +945,7 @@
   </div>
 
   <h2>Installation views</h2>
-  <div class="installs">
+  <div class="installs" data-caption="Installation view, <span class=&quot;t&quot;>Three Painter Protocol</span>, 2026">
     <figure>
       <a class="zoom" href="images/three-painter-protocol-install-01.jpg"><img src="images/three-painter-protocol-install-01.jpg"
            loading="lazy"
@@ -1025,8 +1028,22 @@
     img.alt = source ? source.alt : '';
     var figure = link.closest('figure');
     var text = figure && figure.querySelector('figcaption');
-    // innerText, not textContent: the caption's own line breaks survive
-    cap.textContent = text ? text.innerText.trim() : '';
+    // the caption's own markup is reused rather than its text, so the
+    // italic on the work's title survives into the enlarged view
+    var html = text ? text.innerHTML.trim() : '';
+
+    // sections that carry no caption of their own declare one on the grid
+    var group = figure && figure.closest('[data-caption]');
+    if (!html && group) html = group.getAttribute('data-caption');
+
+    // the painter's name is the heading above the grid, not part of the
+    // caption, so it has to be fetched for the enlarged view
+    var grid = figure && figure.closest('.works');
+    var head = grid && grid.previousElementSibling;
+    if (head && head.tagName === 'H3') {
+      html = '<span class="who">' + head.textContent.trim() + '</span>' + html;
+    }
+    cap.innerHTML = html;
     box.hidden = false;
     box.classList.add('open');
     document.body.style.overflow = 'hidden';
