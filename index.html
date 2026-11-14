@@ -3,6 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- iOS Safari turns anything address-shaped into a Maps link of its own
+     accord. The exhibition is over, so directions help nobody, and the
+     venue line ends up looking like a link the page does not have. -->
+<meta name="format-detection" content="telephone=no,address=no,date=no">
 
 <!--
   ============================================================
@@ -57,6 +61,20 @@
         { "@id": "https://protocol.seungjojeong.com/#img-install-10" }
       ],
       "description": "An exhibition of paintings made through a phased exchange between three studios. Each painter took another's painting as a reference and answered it with a new painting, made in the presence of the physical work rather than from a reproduction; the reference was then passed on to the third painter, who responded in turn. All twelve paintings were shown together: the three that began the project and the nine it produced.",
+      "workFeatured": [
+        { "@id": "https://protocol.seungjojeong.com/#ash-untitled" },
+        { "@id": "https://protocol.seungjojeong.com/#ash-play-for-view-finding" },
+        { "@id": "https://protocol.seungjojeong.com/#ash-display-screen" },
+        { "@id": "https://protocol.seungjojeong.com/#ash-display-dirty-linen" },
+        { "@id": "https://protocol.seungjojeong.com/#fortnum-prosopopoeia" },
+        { "@id": "https://protocol.seungjojeong.com/#fortnum-portrait-of-space" },
+        { "@id": "https://protocol.seungjojeong.com/#fortnum-considering-sj-schema" },
+        { "@id": "https://protocol.seungjojeong.com/#fortnum-age-of-bronze-ii" },
+        { "@id": "https://protocol.seungjojeong.com/#jeong-amber" },
+        { "@id": "https://protocol.seungjojeong.com/#jeong-sitter" },
+        { "@id": "https://protocol.seungjojeong.com/#jeong-in-transit" },
+        { "@id": "https://protocol.seungjojeong.com/#jeong-age-of-bronze" }
+      ],
       "location": {
         "@type": "Place",
         "@id": "https://protocol.seungjojeong.com/#gallery",
@@ -166,8 +184,7 @@
       "artworkSurface": "Board",
       "height": { "@type": "QuantitativeValue", "value": 30, "unitCode": "CMT" },
       "width":  { "@type": "QuantitativeValue", "value": 37, "unitCode": "CMT" },
-      "image": { "@id": "https://protocol.seungjojeong.com/#img-ash-untitled" },
-      "exhibitionEvent": { "@id": "https://protocol.seungjojeong.com/#exhibition" }
+      "image": { "@id": "https://protocol.seungjojeong.com/#img-ash-untitled" }
     },
     {
       "@type": "VisualArtwork",
@@ -181,8 +198,7 @@
       "artworkSurface": "Board",
       "height": { "@type": "QuantitativeValue", "value": 88, "unitCode": "CMT" },
       "width":  { "@type": "QuantitativeValue", "value": 66, "unitCode": "CMT" },
-      "image": { "@id": "https://protocol.seungjojeong.com/#img-ash-play-for-view-finding" },
-      "exhibitionEvent": { "@id": "https://protocol.seungjojeong.com/#exhibition" }
+      "image": { "@id": "https://protocol.seungjojeong.com/#img-ash-play-for-view-finding" }
     },
     {
       "@type": "VisualArtwork",
@@ -196,8 +212,7 @@
       "artworkSurface": "Board",
       "height": { "@type": "QuantitativeValue", "value": 23, "unitCode": "CMT" },
       "width":  { "@type": "QuantitativeValue", "value": 29, "unitCode": "CMT" },
-      "image": { "@id": "https://protocol.seungjojeong.com/#img-ash-display-screen" },
-      "exhibitionEvent": { "@id": "https://protocol.seungjojeong.com/#exhibition" }
+      "image": { "@id": "https://protocol.seungjojeong.com/#img-ash-display-screen" }
     },
     {
       "@type": "VisualArtwork",
@@ -210,8 +225,7 @@
       "artworkSurface": "Board",
       "height": { "@type": "QuantitativeValue", "value": 25, "unitCode": "CMT" },
       "width":  { "@type": "QuantitativeValue", "value": 27, "unitCode": "CMT" },
-      "image": { "@id": "https://protocol.seungjojeong.com/#img-ash-display-dirty-linen" },
-      "exhibitionEvent": { "@id": "https://protocol.seungjojeong.com/#exhibition" }
+      "image": { "@id": "https://protocol.seungjojeong.com/#img-ash-display-dirty-linen" }
     },
 
     {
@@ -223,11 +237,22 @@
       "artform": "Painting",
       "artMedium": "Oil paint",
       "artworkSurface": "Gesso panel",
-      "description": "Each panel 25 x 20 cm.",
-      "height": { "@type": "QuantitativeValue", "value": 25, "unitCode": "CMT" },
-      "width":  { "@type": "QuantitativeValue", "value": 20, "unitCode": "CMT" },
-      "image": { "@id": "https://protocol.seungjojeong.com/#img-fortnum-prosopopoeia" },
-      "exhibitionEvent": { "@id": "https://protocol.seungjojeong.com/#exhibition" }
+      "description": "Two parts, each 25 x 20 cm.",
+      "hasPart": [
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://protocol.seungjojeong.com/#fortnum-prosopopoeia-panel-1",
+          "height": { "@type": "QuantitativeValue", "value": 25, "unitCode": "CMT" },
+          "width":  { "@type": "QuantitativeValue", "value": 20, "unitCode": "CMT" }
+        },
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://protocol.seungjojeong.com/#fortnum-prosopopoeia-panel-2",
+          "height": { "@type": "QuantitativeValue", "value": 25, "unitCode": "CMT" },
+          "width":  { "@type": "QuantitativeValue", "value": 20, "unitCode": "CMT" }
+        }
+      ],
+      "image": { "@id": "https://protocol.seungjojeong.com/#img-fortnum-prosopopoeia" }
     },
     {
       "@type": "VisualArtwork",
@@ -240,10 +265,21 @@
       "artMedium": "Oil paint",
       "artworkSurface": "Gesso panel",
       "description": "Two parts, each 20 x 15 cm.",
-      "height": { "@type": "QuantitativeValue", "value": 20, "unitCode": "CMT" },
-      "width":  { "@type": "QuantitativeValue", "value": 15, "unitCode": "CMT" },
-      "image": { "@id": "https://protocol.seungjojeong.com/#img-fortnum-portrait-of-space" },
-      "exhibitionEvent": { "@id": "https://protocol.seungjojeong.com/#exhibition" }
+      "hasPart": [
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://protocol.seungjojeong.com/#fortnum-portrait-of-space-panel-1",
+          "height": { "@type": "QuantitativeValue", "value": 20, "unitCode": "CMT" },
+          "width":  { "@type": "QuantitativeValue", "value": 15, "unitCode": "CMT" }
+        },
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://protocol.seungjojeong.com/#fortnum-portrait-of-space-panel-2",
+          "height": { "@type": "QuantitativeValue", "value": 20, "unitCode": "CMT" },
+          "width":  { "@type": "QuantitativeValue", "value": 15, "unitCode": "CMT" }
+        }
+      ],
+      "image": { "@id": "https://protocol.seungjojeong.com/#img-fortnum-portrait-of-space" }
     },
     {
       "@type": "VisualArtwork",
@@ -256,10 +292,21 @@
       "artMedium": "Oil paint",
       "artworkSurface": "Gesso panel",
       "description": "Two parts, each 25 x 20 cm.",
-      "height": { "@type": "QuantitativeValue", "value": 25, "unitCode": "CMT" },
-      "width":  { "@type": "QuantitativeValue", "value": 20, "unitCode": "CMT" },
-      "image": { "@id": "https://protocol.seungjojeong.com/#img-fortnum-considering-sj-schema" },
-      "exhibitionEvent": { "@id": "https://protocol.seungjojeong.com/#exhibition" }
+      "hasPart": [
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://protocol.seungjojeong.com/#fortnum-considering-sj-schema-panel-1",
+          "height": { "@type": "QuantitativeValue", "value": 25, "unitCode": "CMT" },
+          "width":  { "@type": "QuantitativeValue", "value": 20, "unitCode": "CMT" }
+        },
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://protocol.seungjojeong.com/#fortnum-considering-sj-schema-panel-2",
+          "height": { "@type": "QuantitativeValue", "value": 25, "unitCode": "CMT" },
+          "width":  { "@type": "QuantitativeValue", "value": 20, "unitCode": "CMT" }
+        }
+      ],
+      "image": { "@id": "https://protocol.seungjojeong.com/#img-fortnum-considering-sj-schema" }
     },
     {
       "@type": "VisualArtwork",
@@ -271,10 +318,21 @@
       "artMedium": "Watercolour, gouache and pencil",
       "artworkSurface": "Paper",
       "description": "Two parts, each 150 x 122 cm.",
-      "height": { "@type": "QuantitativeValue", "value": 150, "unitCode": "CMT" },
-      "width":  { "@type": "QuantitativeValue", "value": 122, "unitCode": "CMT" },
-      "image": { "@id": "https://protocol.seungjojeong.com/#img-fortnum-age-of-bronze-ii" },
-      "exhibitionEvent": { "@id": "https://protocol.seungjojeong.com/#exhibition" }
+      "hasPart": [
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://protocol.seungjojeong.com/#fortnum-age-of-bronze-ii-panel-1",
+          "height": { "@type": "QuantitativeValue", "value": 150, "unitCode": "CMT" },
+          "width":  { "@type": "QuantitativeValue", "value": 122, "unitCode": "CMT" }
+        },
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://protocol.seungjojeong.com/#fortnum-age-of-bronze-ii-panel-2",
+          "height": { "@type": "QuantitativeValue", "value": 150, "unitCode": "CMT" },
+          "width":  { "@type": "QuantitativeValue", "value": 122, "unitCode": "CMT" }
+        }
+      ],
+      "image": { "@id": "https://protocol.seungjojeong.com/#img-fortnum-age-of-bronze-ii" }
     },
 
     {
@@ -288,8 +346,7 @@
       "artworkSurface": "Linen",
       "height": { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
       "width":  { "@type": "QuantitativeValue", "value": 40, "unitCode": "CMT" },
-      "image": { "@id": "https://protocol.seungjojeong.com/#img-jeong-amber" },
-      "exhibitionEvent": { "@id": "https://protocol.seungjojeong.com/#exhibition" }
+      "image": { "@id": "https://protocol.seungjojeong.com/#img-jeong-amber" }
     },
     {
       "@type": "VisualArtwork",
@@ -302,10 +359,21 @@
       "artMedium": "Acrylic paint",
       "artworkSurface": "Linen",
       "description": "Two parts, each 45 x 35 cm.",
-      "height": { "@type": "QuantitativeValue", "value": 45, "unitCode": "CMT" },
-      "width":  { "@type": "QuantitativeValue", "value": 35, "unitCode": "CMT" },
-      "image": { "@id": "https://protocol.seungjojeong.com/#img-jeong-sitter" },
-      "exhibitionEvent": { "@id": "https://protocol.seungjojeong.com/#exhibition" }
+      "hasPart": [
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://protocol.seungjojeong.com/#jeong-sitter-panel-1",
+          "height": { "@type": "QuantitativeValue", "value": 45, "unitCode": "CMT" },
+          "width":  { "@type": "QuantitativeValue", "value": 35, "unitCode": "CMT" }
+        },
+        {
+          "@type": "VisualArtwork",
+          "@id": "https://protocol.seungjojeong.com/#jeong-sitter-panel-2",
+          "height": { "@type": "QuantitativeValue", "value": 45, "unitCode": "CMT" },
+          "width":  { "@type": "QuantitativeValue", "value": 35, "unitCode": "CMT" }
+        }
+      ],
+      "image": { "@id": "https://protocol.seungjojeong.com/#img-jeong-sitter" }
     },
     {
       "@type": "VisualArtwork",
@@ -319,8 +387,7 @@
       "artworkSurface": "Linen",
       "height": { "@type": "QuantitativeValue", "value": 40, "unitCode": "CMT" },
       "width":  { "@type": "QuantitativeValue", "value": 50, "unitCode": "CMT" },
-      "image": { "@id": "https://protocol.seungjojeong.com/#img-jeong-in-transit" },
-      "exhibitionEvent": { "@id": "https://protocol.seungjojeong.com/#exhibition" }
+      "image": { "@id": "https://protocol.seungjojeong.com/#img-jeong-in-transit" }
     },
     {
       "@type": "VisualArtwork",
@@ -334,8 +401,7 @@
       "artworkSurface": "Linen",
       "height": { "@type": "QuantitativeValue", "value": 160, "unitCode": "CMT" },
       "width":  { "@type": "QuantitativeValue", "value": 40, "unitCode": "CMT" },
-      "image": { "@id": "https://protocol.seungjojeong.com/#img-jeong-age-of-bronze" },
-      "exhibitionEvent": { "@id": "https://protocol.seungjojeong.com/#exhibition" }
+      "image": { "@id": "https://protocol.seungjojeong.com/#img-jeong-age-of-bronze" }
     },
 
     {
@@ -390,7 +456,7 @@
       "@type": "ImageObject",
       "@id": "https://protocol.seungjojeong.com/#img-fortnum-prosopopoeia",
       "contentUrl": "https://protocol.seungjojeong.com/images/work-fortnum-prosopopoeia-2019.jpg",
-      "caption": "Rebecca Fortnum, Prosopopoeia (Dressler, Nina Resch), 2019. Oil on gesso panel, 25 x 20 cm each panel.",
+      "caption": "Rebecca Fortnum, Prosopopoeia (Dressler, Nina Resch), 2019. Oil on gesso panel, two parts, each 25 x 20 cm.",
       "description": "Two panels. At left, a head with copper-red hair and a pale, downcast face against deep green; at right, a grey panel faintly drawn with interlacing linear figures.",
       "license": "https://protocol.seungjojeong.com/rights.html",
       "acquireLicensePage": "https://protocol.seungjojeong.com/rights.html",
@@ -876,7 +942,7 @@
     <figure id="fortnum-prosopopoeia">
       <a class="zoom" href="images/work-fortnum-prosopopoeia-2019.jpg"><img src="images/work-fortnum-prosopopoeia-2019.jpg"
            alt="Two panels. At left, a head with copper-red hair and a pale, downcast face against deep green; at right, a grey panel faintly drawn with interlacing linear figures."></a>
-      <figcaption><span class="t">Prosopopoeia (Dressler, Nina Resch)</span>, 2019<br>25 &times; 20 cm each panel &middot; oil on gesso panel</figcaption>
+      <figcaption><span class="t">Prosopopoeia (Dressler, Nina Resch)</span>, 2019<br>25 &times; 20 cm each, 2 parts &middot; oil on gesso panel</figcaption>
       <p class="rel">Answered by <a href="#jeong-sitter"><em>Sitter</em></a> and <a href="#ash-display-screen"><em>Display (screen)</em></a>.</p>
     </figure>
     <figure id="fortnum-portrait-of-space">
