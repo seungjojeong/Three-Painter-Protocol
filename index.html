@@ -167,7 +167,7 @@
       "@type": "Person",
       "@id": "https://www.threepainterprotocol.net/#jeong",
       "name": "Seungjo Jeong",
-      "alternateName": "Joe Jeong",
+      "alternateName": "정승조",
       "jobTitle": "Artist and researcher",
       "description": "Artist and researcher based in London, with a background in software engineering. His doctoral research, 'Painting Practice as Network: The Interoperability of Contemporary Painting', reconsiders the relation between a painting and its on-screen image.",
       "alumniOf": [
@@ -815,7 +815,7 @@
       "@type": "VideoObject",
       "name": "Three Painter Protocol — exhibition documentation",
       "description": "Documentation of the exhibition at The Transformation Gallery, October 2026.",
-      "uploadDate": "2026-10-31",
+      "uploadDate": "2026-11-09",
       "thumbnailUrl": "https://img.youtube.com/vi/Y1Y0AhfnQSg/maxresdefault.jpg",
       "embedUrl": "https://www.youtube.com/embed/Y1Y0AhfnQSg",
       "url": "https://www.youtube.com/shorts/Y1Y0AhfnQSg",
@@ -931,6 +931,12 @@
     .installs img { aspect-ratio: auto; width: auto; max-width: 100%; max-height: 62vh; }
   }
 
+  /* The walkthrough player, as on seungjojeong.net. Published as a Short,
+     but the video itself is landscape — oEmbed gives 200x113 and the
+     thumbnail 1280x720 — so 16/9 fits it without pillarboxing. */
+  .video { aspect-ratio: 16 / 9; background: var(--paper); margin: 0 0 0.95rem; }
+  .video iframe { width: 100%; height: 100%; border: 0; display: block; }
+
   /* posters, three up */
   .posters { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 2.5rem 2rem; margin: 0; align-items: start; }
 
@@ -1024,7 +1030,7 @@
       <a class="zoom" href="images/work-ash-display-dirty-linen-2026.jpg"><img src="images/work-ash-display-dirty-linen-2026.jpg"
            alt="Painted in the form of a Polaroid, with a white border and a handwritten note at the lower right. Within it, cloths in orange, yellow, red, teal and dark brown hang from the branches of a tree in bright green foliage."></a>
       <figcaption><span class="t">Display (dirty linen)</span>, 2026<br>25 &times; 27 cm &middot; oil on board</figcaption>
-      <p class="rel">Answers the exchange as a whole (Phase 3).</p>
+      <p class="rel">(Phase 3)</p>
     </figure>
   </div>
 
@@ -1052,7 +1058,7 @@
       <a class="zoom" href="images/work-fortnum-age-of-bronze-ii-2026.jpg"><img src="images/work-fortnum-age-of-bronze-ii-2026.jpg"
            alt="Two large sheets of paper pinned to the wall, each carrying a standing nude figure in washed blue-green — one paler, one deeper in tone — with one arm raised above the head and the other bent upward, after Rodin’s sculpture."></a>
       <figcaption><span class="t">Untitled (The Age of Bronze ii)</span>, 2026<br>150 &times; 122 cm each, 2 parts &middot; watercolour, gouache and pencil on paper</figcaption>
-      <p class="rel">Answers the exchange as a whole (Phase 3).</p>
+      <p class="rel">(Phase 3)</p>
     </figure>
   </div>
 
@@ -1172,7 +1178,15 @@
   <p>There was a performance led by Jesse Ash on the opening night.</p>
 
   <h2>Exhibition walkthrough</h2>
-  <p><a href="https://www.youtube.com/shorts/Y1Y0AhfnQSg">youtube.com/shorts/Y1Y0AhfnQSg</a></p>
+  <div class="video">
+    <iframe src="https://www.youtube-nocookie.com/embed/Y1Y0AhfnQSg"
+            title="Three Painter Protocol: Exhibition Walkthrough"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+  </div>
+  <p class="meta"><a href="https://youtu.be/Y1Y0AhfnQSg">Watch on YouTube</a></p>
   <footer>
     <p>Works &copy; the artists. All photographs &copy; 2026 Seungjo Jeong. See <a href="rights.html">rights and permissions</a>.</p>
   </footer>
