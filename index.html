@@ -111,7 +111,11 @@
       ],
       "url": "https://www.threepainterprotocol.net/",
       "sameAs": ["https://www.thetransformationgallery.co.uk/post/three-painter-protocol"],
-      "subjectOf": { "@id": "https://www.threepainterprotocol.net/#cocker-text" }
+      "subjectOf": { "@id": "https://www.threepainterprotocol.net/#cocker-text" },
+      "recordedIn": [
+        { "@id": "https://youtu.be/Y1Y0AhfnQSg" },
+        { "@id": "https://youtu.be/0k2LPoZsboY" }
+      ]
     },
 
     {
@@ -1019,13 +1023,31 @@
 
     {
       "@type": "VideoObject",
-      "name": "Three Painter Protocol — exhibition documentation",
-      "description": "Documentation of the exhibition at The Transformation Gallery, October 2026.",
+      "@id": "https://youtu.be/Y1Y0AhfnQSg",
+      "name": "Three Painter Protocol: Exhibition Walkthrough",
+      "description": "A walkthrough of the exhibition at The Transformation Gallery, London.",
       "uploadDate": "2026-11-09",
-      "thumbnailUrl": "https://img.youtube.com/vi/Y1Y0AhfnQSg/maxresdefault.jpg",
+      "thumbnailUrl": "https://img.youtube.com/vi/Y1Y0AhfnQSg/hqdefault.jpg",
       "embedUrl": "https://www.youtube.com/embed/Y1Y0AhfnQSg",
-      "url": "https://www.youtube.com/shorts/Y1Y0AhfnQSg",
-      "about": { "@id": "https://www.threepainterprotocol.net/#exhibition" }
+      "url": "https://youtu.be/Y1Y0AhfnQSg",
+      "creator": { "@id": "https://www.threepainterprotocol.net/#jeong" },
+      "recordedAt": { "@id": "https://www.threepainterprotocol.net/#exhibition" },
+      "about": { "@id": "https://www.threepainterprotocol.net/#exhibition" },
+      "contentLocation": { "@id": "https://www.threepainterprotocol.net/#gallery" }
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://youtu.be/0k2LPoZsboY",
+      "name": "Three Painter Protocol: Panoramic view",
+      "description": "A panoramic view of the exhibition at The Transformation Gallery, London, turning a full circle from the middle of the gallery.",
+      "uploadDate": "2026-11-22",
+      "thumbnailUrl": "https://img.youtube.com/vi/0k2LPoZsboY/hqdefault.jpg",
+      "embedUrl": "https://www.youtube.com/embed/0k2LPoZsboY",
+      "url": "https://youtu.be/0k2LPoZsboY",
+      "creator": { "@id": "https://www.threepainterprotocol.net/#jeong" },
+      "recordedAt": { "@id": "https://www.threepainterprotocol.net/#exhibition" },
+      "about": { "@id": "https://www.threepainterprotocol.net/#exhibition" },
+      "contentLocation": { "@id": "https://www.threepainterprotocol.net/#gallery" }
     }
 
   ]
@@ -1316,11 +1338,16 @@
     .installs img { aspect-ratio: auto; width: auto; max-width: 100%; max-height: 62vh; }
   }
 
-  /* The walkthrough player, as on seungjojeong.net. Published as a Short,
-     but the video itself is landscape — oEmbed gives 200x113 and the
-     thumbnail 1280x720 — so 16/9 fits it without pillarboxing. */
+  /* The video players, as on seungjojeong.net. Each box takes its video's
+     own shape, so the picture fills it without bars. The panoramic view is
+     3432 x 2086. The walkthrough is a Short filmed upright: its encoded
+     sizes are 1440 x 2560, although oEmbed reports 200 x 113 and its
+     thumbnail is 1280 x 720, which is why it first had a 16:9 box here. */
   .video { aspect-ratio: 16 / 9; background: var(--paper); margin: 0 0 0.95rem; }
   .video iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .video.wide { aspect-ratio: 3432 / 2086; }
+  .video.vertical { aspect-ratio: 9 / 16; max-width: 22rem; }
+  .vid + .vid { margin-top: 2.5rem; }
 
   /* posters, three up */
   .posters { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 2.5rem 2rem; margin: 0; align-items: start; }
@@ -1562,16 +1589,30 @@
   <h2>Performance</h2>
   <p>There was a performance led by Jesse Ash on the opening night.</p>
 
-  <h2>Exhibition walkthrough</h2>
-  <div class="video">
+  <h2>Videos</h2>
+  <div class="vid" id="video-walkthrough">
+  <div class="video vertical">
     <iframe src="https://www.youtube-nocookie.com/embed/Y1Y0AhfnQSg"
-            title="Three Painter Protocol: Exhibition Walkthrough"
+            title="Exhibition walkthrough, &ldquo;Three Painter Protocol&rdquo;, The Transformation Gallery, London, 2026"
             loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen></iframe>
   </div>
-  <p class="meta"><a href="https://youtu.be/Y1Y0AhfnQSg">Watch on YouTube</a></p>
+  <p class="meta">Exhibition walkthrough &middot; <a href="https://youtu.be/Y1Y0AhfnQSg">Watch on YouTube</a></p>
+  </div>
+
+  <div class="vid" id="video-panorama">
+  <div class="video wide">
+    <iframe src="https://www.youtube-nocookie.com/embed/0k2LPoZsboY"
+            title="Panoramic view of the exhibition, &ldquo;Three Painter Protocol&rdquo;, The Transformation Gallery, London, 2026"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+  </div>
+  <p class="meta">Panoramic view of the exhibition &middot; <a href="https://youtu.be/0k2LPoZsboY">Watch on YouTube</a></p>
+  </div>
   <footer>
     <p>Works &copy; the artists. All photographs &copy; 2026 <a href="https://www.seungjojeong.net">Seungjo Jeong</a>. See <a href="rights.html">rights and permissions</a>.</p>
   </footer>
