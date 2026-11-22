@@ -128,6 +128,53 @@
     },
 
     {
+      "@type": "Place",
+      "@id": "https://www.threepainterprotocol.net/#wall-partition",
+      "name": "Partition wall",
+      "description": "The free-standing partition opposite the glass entrance doors. Seven works hung on it. From left to right as seen facing it: The Age of Bronze (Seungjo Jeong), on its own at the end towards the far wall, beside a doorway; then a group of six: Untitled (Jesse Ash); In Transit (Seungjo Jeong), lower and to its right, with Portrait of Space (Jesse Ash & Lee Miller) (Rebecca Fortnum) above it; A Play for View Finding (Jesse Ash) at the centre of the group; Amber (Seungjo Jeong); and Considering SJ’s schema (The Age of Bronze) (Rebecca Fortnum), higher, above Amber and to its right. Its right-hand end is towards the whitewashed brick end wall.",
+      "containedInPlace": { "@id": "https://www.threepainterprotocol.net/#gallery" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "colour", "value": "White" }
+      ]
+    },
+    {
+      "@type": "Place",
+      "@id": "https://www.threepainterprotocol.net/#wall-far",
+      "name": "Far wall",
+      "description": "The end wall facing down the length of the gallery towards the brick end wall. Three works hung on it, left to right: Display (screen) (Jesse Ash), Prosopopoeia (Dressler, Nina Resch) (Rebecca Fortnum) and Sitter (Seungjo Jeong). It meets the entrance wall at its left-hand corner; near its right-hand corner a doorway opens beside the partition wall.",
+      "containedInPlace": { "@id": "https://www.threepainterprotocol.net/#gallery" },
+      "geoTouches": { "@id": "https://www.threepainterprotocol.net/#wall-entrance" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "colour", "value": "White" }
+      ]
+    },
+    {
+      "@type": "Place",
+      "@id": "https://www.threepainterprotocol.net/#wall-brick",
+      "name": "Brick end wall",
+      "description": "The whitewashed brick wall at the end of the gallery, facing the far wall. Display (dirty linen) (Jesse Ash) hung alone at its centre. It meets the entrance wall at its right-hand corner.",
+      "containedInPlace": { "@id": "https://www.threepainterprotocol.net/#gallery" },
+      "geoTouches": { "@id": "https://www.threepainterprotocol.net/#wall-entrance" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "colour", "value": "White" }
+      ]
+    },
+    {
+      "@type": "Place",
+      "@id": "https://www.threepainterprotocol.net/#wall-entrance",
+      "name": "Entrance wall",
+      "description": "The wall with the gallery’s glass entrance doors, opposite the partition wall. Untitled (The Age of Bronze ii) (Rebecca Fortnum) was pinned to it between the corner with the brick end wall and the doors. No other work hung on it. At its other end it meets the far wall.",
+      "containedInPlace": { "@id": "https://www.threepainterprotocol.net/#gallery" },
+      "geoTouches": [
+        { "@id": "https://www.threepainterprotocol.net/#wall-brick" },
+        { "@id": "https://www.threepainterprotocol.net/#wall-far" }
+      ],
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "colour", "value": "White" }
+      ]
+    },
+
+    {
       "@type": "Article",
       "@id": "https://www.threepainterprotocol.net/#cocker-text",
       "name": "Opening to the Unexpected: Nine Notes on a Protocol-Based Practice",
@@ -332,12 +379,14 @@
         {
           "@type": "VisualArtwork",
           "@id": "https://www.threepainterprotocol.net/#fortnum-prosopopoeia-panel-1",
+          "description": "The head with copper-red hair.",
           "height": { "@type": "QuantitativeValue", "value": 25, "unitCode": "CMT" },
           "width":  { "@type": "QuantitativeValue", "value": 20, "unitCode": "CMT" }
         },
         {
           "@type": "VisualArtwork",
           "@id": "https://www.threepainterprotocol.net/#fortnum-prosopopoeia-panel-2",
+          "description": "The grey panel drawn with interlacing figures.",
           "height": { "@type": "QuantitativeValue", "value": 25, "unitCode": "CMT" },
           "width":  { "@type": "QuantitativeValue", "value": 20, "unitCode": "CMT" }
         }
@@ -359,12 +408,14 @@
         {
           "@type": "VisualArtwork",
           "@id": "https://www.threepainterprotocol.net/#fortnum-portrait-of-space-panel-1",
+          "description": "The pale conical form in dark olive and navy.",
           "height": { "@type": "QuantitativeValue", "value": 20, "unitCode": "CMT" },
           "width":  { "@type": "QuantitativeValue", "value": 15, "unitCode": "CMT" }
         },
         {
           "@type": "VisualArtwork",
           "@id": "https://www.threepainterprotocol.net/#fortnum-portrait-of-space-panel-2",
+          "description": "The red landscape.",
           "height": { "@type": "QuantitativeValue", "value": 20, "unitCode": "CMT" },
           "width":  { "@type": "QuantitativeValue", "value": 15, "unitCode": "CMT" }
         }
@@ -386,12 +437,14 @@
         {
           "@type": "VisualArtwork",
           "@id": "https://www.threepainterprotocol.net/#fortnum-considering-sj-schema-panel-1",
+          "description": "The figure on a warm pale ground.",
           "height": { "@type": "QuantitativeValue", "value": 25, "unitCode": "CMT" },
           "width":  { "@type": "QuantitativeValue", "value": 20, "unitCode": "CMT" }
         },
         {
           "@type": "VisualArtwork",
           "@id": "https://www.threepainterprotocol.net/#fortnum-considering-sj-schema-panel-2",
+          "description": "The figure on dark grey.",
           "height": { "@type": "QuantitativeValue", "value": 25, "unitCode": "CMT" },
           "width":  { "@type": "QuantitativeValue", "value": 20, "unitCode": "CMT" }
         }
@@ -413,12 +466,14 @@
         {
           "@type": "VisualArtwork",
           "@id": "https://www.threepainterprotocol.net/#fortnum-age-of-bronze-ii-panel-1",
+          "description": "The paler figure.",
           "height": { "@type": "QuantitativeValue", "value": 150, "unitCode": "CMT" },
           "width":  { "@type": "QuantitativeValue", "value": 122, "unitCode": "CMT" }
         },
         {
           "@type": "VisualArtwork",
           "@id": "https://www.threepainterprotocol.net/#fortnum-age-of-bronze-ii-panel-2",
+          "description": "The deeper-toned figure.",
           "height": { "@type": "QuantitativeValue", "value": 150, "unitCode": "CMT" },
           "width":  { "@type": "QuantitativeValue", "value": 122, "unitCode": "CMT" }
         }
@@ -454,12 +509,14 @@
         {
           "@type": "VisualArtwork",
           "@id": "https://www.threepainterprotocol.net/#jeong-sitter-panel-1",
+          "description": "The panel with the grey band at the top.",
           "height": { "@type": "QuantitativeValue", "value": 45, "unitCode": "CMT" },
           "width":  { "@type": "QuantitativeValue", "value": 35, "unitCode": "CMT" }
         },
         {
           "@type": "VisualArtwork",
           "@id": "https://www.threepainterprotocol.net/#jeong-sitter-panel-2",
+          "description": "The panel with the green band at the bottom.",
           "height": { "@type": "QuantitativeValue", "value": 45, "unitCode": "CMT" },
           "width":  { "@type": "QuantitativeValue", "value": 35, "unitCode": "CMT" }
         }
@@ -505,6 +562,7 @@
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
       "creator": { "@id": "https://www.threepainterprotocol.net/#jeong" },
+      "about": { "@id": "https://www.threepainterprotocol.net/#ash-untitled" },
       "copyrightNotice": "Work © Jesse Ash. Photograph © 2026 Seungjo Jeong."
     },
     {
@@ -517,6 +575,7 @@
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
       "creator": { "@id": "https://www.threepainterprotocol.net/#jeong" },
+      "about": { "@id": "https://www.threepainterprotocol.net/#ash-play-for-view-finding" },
       "copyrightNotice": "Work © Jesse Ash. Photograph © 2026 Seungjo Jeong."
     },
     {
@@ -529,6 +588,7 @@
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
       "creator": { "@id": "https://www.threepainterprotocol.net/#jeong" },
+      "about": { "@id": "https://www.threepainterprotocol.net/#ash-display-screen" },
       "copyrightNotice": "Work © Jesse Ash. Photograph © 2026 Seungjo Jeong."
     },
     {
@@ -541,6 +601,7 @@
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
       "creator": { "@id": "https://www.threepainterprotocol.net/#jeong" },
+      "about": { "@id": "https://www.threepainterprotocol.net/#ash-display-dirty-linen" },
       "copyrightNotice": "Work © Jesse Ash. Photograph © 2026 Seungjo Jeong."
     },
     {
@@ -553,6 +614,7 @@
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
       "creator": { "@id": "https://www.threepainterprotocol.net/#jeong" },
+      "about": { "@id": "https://www.threepainterprotocol.net/#fortnum-prosopopoeia" },
       "copyrightNotice": "Work © Rebecca Fortnum. Photograph © 2026 Seungjo Jeong."
     },
     {
@@ -565,6 +627,7 @@
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
       "creator": { "@id": "https://www.threepainterprotocol.net/#jeong" },
+      "about": { "@id": "https://www.threepainterprotocol.net/#fortnum-portrait-of-space" },
       "copyrightNotice": "Work © Rebecca Fortnum. Photograph © 2026 Seungjo Jeong."
     },
     {
@@ -577,6 +640,7 @@
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
       "creator": { "@id": "https://www.threepainterprotocol.net/#jeong" },
+      "about": { "@id": "https://www.threepainterprotocol.net/#fortnum-considering-sj-schema" },
       "copyrightNotice": "Work © Rebecca Fortnum. Photograph © 2026 Seungjo Jeong."
     },
     {
@@ -589,6 +653,7 @@
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
       "creator": { "@id": "https://www.threepainterprotocol.net/#jeong" },
+      "about": { "@id": "https://www.threepainterprotocol.net/#fortnum-age-of-bronze-ii" },
       "copyrightNotice": "Work © Rebecca Fortnum. Photograph © 2026 Seungjo Jeong."
     },
     {
@@ -601,6 +666,7 @@
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
       "creator": { "@id": "https://www.threepainterprotocol.net/#jeong" },
+      "about": { "@id": "https://www.threepainterprotocol.net/#jeong-amber" },
       "copyrightNotice": "Work and photograph © Seungjo Jeong."
     },
     {
@@ -613,6 +679,7 @@
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
       "creator": { "@id": "https://www.threepainterprotocol.net/#jeong" },
+      "about": { "@id": "https://www.threepainterprotocol.net/#jeong-sitter" },
       "copyrightNotice": "Work and photograph © Seungjo Jeong."
     },
     {
@@ -625,6 +692,7 @@
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
       "creator": { "@id": "https://www.threepainterprotocol.net/#jeong" },
+      "about": { "@id": "https://www.threepainterprotocol.net/#jeong-in-transit" },
       "copyrightNotice": "Work and photograph © Seungjo Jeong."
     },
     {
@@ -637,6 +705,7 @@
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
       "creator": { "@id": "https://www.threepainterprotocol.net/#jeong" },
+      "about": { "@id": "https://www.threepainterprotocol.net/#jeong-age-of-bronze" },
       "copyrightNotice": "Work and photograph © Seungjo Jeong."
     },
 
@@ -684,7 +753,24 @@
       "@type": "ImageObject",
       "@id": "https://www.threepainterprotocol.net/#img-install-01",
       "contentUrl": "https://www.threepainterprotocol.net/images/three-painter-protocol-install-01.jpg",
-      "description": "Looking across the gallery: a group of seven small paintings on the free-standing partition wall at left, a single small painting on the whitewashed brick wall beyond, and a draped cloth on a branch standing in the foreground.",
+      "description": "Looking across the gallery: six paintings on the free-standing partition wall at left, a single small painting on the whitewashed brick wall beyond, and in the foreground a draped cloth on a branch, used in Jesse Ash’s performance on the opening night.",
+      "about": [
+        { "@id": "https://www.threepainterprotocol.net/#ash-untitled" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-in-transit" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-portrait-of-space" },
+        { "@id": "https://www.threepainterprotocol.net/#ash-play-for-view-finding" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-amber" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-considering-sj-schema" },
+        { "@id": "https://www.threepainterprotocol.net/#ash-display-dirty-linen" },
+        { "@id": "https://www.threepainterprotocol.net/#display-ash-untitled" },
+        { "@id": "https://www.threepainterprotocol.net/#display-jeong-in-transit" },
+        { "@id": "https://www.threepainterprotocol.net/#display-fortnum-portrait-of-space" },
+        { "@id": "https://www.threepainterprotocol.net/#display-ash-play-for-view-finding" },
+        { "@id": "https://www.threepainterprotocol.net/#display-jeong-amber" },
+        { "@id": "https://www.threepainterprotocol.net/#display-fortnum-considering-sj-schema" },
+        { "@id": "https://www.threepainterprotocol.net/#display-ash-display-dirty-linen" }
+      ],
+      "contentLocation": { "@id": "https://www.threepainterprotocol.net/#gallery" },
       "license": "https://www.threepainterprotocol.net/rights.html",
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
@@ -698,7 +784,22 @@
       "@type": "ImageObject",
       "@id": "https://www.threepainterprotocol.net/#img-install-02",
       "contentUrl": "https://www.threepainterprotocol.net/images/three-painter-protocol-install-02.jpg",
-      "description": "The partition wall hung with seven works: two landscape-format paintings at left, a pair of small panels above, a large soft-toned abstract at centre, an orange and grey geometric painting, and two small grisaille figure panels at upper right.",
+      "description": "Six of the seven works on the partition wall: two landscape-format paintings at left, a pair of small panels above, a large soft-toned abstract at centre, an orange and grey geometric painting, and two small grisaille figure panels at upper right.",
+      "about": [
+        { "@id": "https://www.threepainterprotocol.net/#ash-untitled" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-in-transit" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-portrait-of-space" },
+        { "@id": "https://www.threepainterprotocol.net/#ash-play-for-view-finding" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-amber" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-considering-sj-schema" },
+        { "@id": "https://www.threepainterprotocol.net/#display-ash-untitled" },
+        { "@id": "https://www.threepainterprotocol.net/#display-jeong-in-transit" },
+        { "@id": "https://www.threepainterprotocol.net/#display-fortnum-portrait-of-space" },
+        { "@id": "https://www.threepainterprotocol.net/#display-ash-play-for-view-finding" },
+        { "@id": "https://www.threepainterprotocol.net/#display-jeong-amber" },
+        { "@id": "https://www.threepainterprotocol.net/#display-fortnum-considering-sj-schema" }
+      ],
+      "contentLocation": { "@id": "https://www.threepainterprotocol.net/#gallery" },
       "license": "https://www.threepainterprotocol.net/rights.html",
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
@@ -711,7 +812,24 @@
       "@type": "ImageObject",
       "@id": "https://www.threepainterprotocol.net/#img-install-03",
       "contentUrl": "https://www.threepainterprotocol.net/images/three-painter-protocol-install-03.jpg",
-      "description": "Across the corner of the gallery, with the draped cloth and branch at left, three works on the far wall, and the partition wall group seen edge-on at right.",
+      "description": "Across the corner of the gallery, with the draped cloth and branch from Jesse Ash’s performance at left, three works on the far wall, and the partition wall group seen edge-on at right.",
+      "about": [
+        { "@id": "https://www.threepainterprotocol.net/#ash-display-screen" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-prosopopoeia" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-sitter" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-age-of-bronze" },
+        { "@id": "https://www.threepainterprotocol.net/#ash-untitled" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-portrait-of-space" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-in-transit" },
+        { "@id": "https://www.threepainterprotocol.net/#display-ash-display-screen" },
+        { "@id": "https://www.threepainterprotocol.net/#display-fortnum-prosopopoeia" },
+        { "@id": "https://www.threepainterprotocol.net/#display-jeong-sitter" },
+        { "@id": "https://www.threepainterprotocol.net/#display-jeong-age-of-bronze" },
+        { "@id": "https://www.threepainterprotocol.net/#display-ash-untitled" },
+        { "@id": "https://www.threepainterprotocol.net/#display-fortnum-portrait-of-space" },
+        { "@id": "https://www.threepainterprotocol.net/#display-jeong-in-transit" }
+      ],
+      "contentLocation": { "@id": "https://www.threepainterprotocol.net/#gallery" },
       "license": "https://www.threepainterprotocol.net/rights.html",
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
@@ -725,6 +843,15 @@
       "@id": "https://www.threepainterprotocol.net/#img-install-04",
       "contentUrl": "https://www.threepainterprotocol.net/images/three-painter-protocol-install-04.jpg",
       "description": "Three works on the far wall: a small framed work in pale green, a two-panel painting pairing a red-haired head with a pale drawn panel, and a vertically stacked pair of geometric panels in blue, pink and grey.",
+      "about": [
+        { "@id": "https://www.threepainterprotocol.net/#ash-display-screen" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-prosopopoeia" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-sitter" },
+        { "@id": "https://www.threepainterprotocol.net/#display-ash-display-screen" },
+        { "@id": "https://www.threepainterprotocol.net/#display-fortnum-prosopopoeia" },
+        { "@id": "https://www.threepainterprotocol.net/#display-jeong-sitter" }
+      ],
+      "contentLocation": { "@id": "https://www.threepainterprotocol.net/#gallery" },
       "license": "https://www.threepainterprotocol.net/rights.html",
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
@@ -737,7 +864,16 @@
       "@type": "ImageObject",
       "@id": "https://www.threepainterprotocol.net/#img-install-05",
       "contentUrl": "https://www.threepainterprotocol.net/images/three-painter-protocol-install-05.jpg",
-      "description": "Four works hung as a group: a black and ochre landscape, a blue and black painting with a dark circular void, and two small panels above in dark green and red.",
+      "description": "Three works hung as a group: a black and ochre landscape, a blue and black painting with a dark circular void, and a pair of small panels above in dark green and red.",
+      "about": [
+        { "@id": "https://www.threepainterprotocol.net/#ash-untitled" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-portrait-of-space" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-in-transit" },
+        { "@id": "https://www.threepainterprotocol.net/#display-ash-untitled" },
+        { "@id": "https://www.threepainterprotocol.net/#display-fortnum-portrait-of-space" },
+        { "@id": "https://www.threepainterprotocol.net/#display-jeong-in-transit" }
+      ],
+      "contentLocation": { "@id": "https://www.threepainterprotocol.net/#gallery" },
       "license": "https://www.threepainterprotocol.net/rights.html",
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
@@ -751,6 +887,23 @@
       "@id": "https://www.threepainterprotocol.net/#img-install-06",
       "contentUrl": "https://www.threepainterprotocol.net/images/three-painter-protocol-install-06.jpg",
       "description": "Down the length of the gallery, with the partition wall group at left, a single small painting centred on the whitewashed brick end wall, and two large works on paper showing blue-green figures at right.",
+      "about": [
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-portrait-of-space" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-in-transit" },
+        { "@id": "https://www.threepainterprotocol.net/#ash-play-for-view-finding" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-amber" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-considering-sj-schema" },
+        { "@id": "https://www.threepainterprotocol.net/#ash-display-dirty-linen" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-age-of-bronze-ii" },
+        { "@id": "https://www.threepainterprotocol.net/#display-fortnum-portrait-of-space" },
+        { "@id": "https://www.threepainterprotocol.net/#display-jeong-in-transit" },
+        { "@id": "https://www.threepainterprotocol.net/#display-ash-play-for-view-finding" },
+        { "@id": "https://www.threepainterprotocol.net/#display-jeong-amber" },
+        { "@id": "https://www.threepainterprotocol.net/#display-fortnum-considering-sj-schema" },
+        { "@id": "https://www.threepainterprotocol.net/#display-ash-display-dirty-linen" },
+        { "@id": "https://www.threepainterprotocol.net/#display-fortnum-age-of-bronze-ii" }
+      ],
+      "contentLocation": { "@id": "https://www.threepainterprotocol.net/#gallery" },
       "license": "https://www.threepainterprotocol.net/rights.html",
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
@@ -764,6 +917,13 @@
       "@id": "https://www.threepainterprotocol.net/#img-install-07",
       "contentUrl": "https://www.threepainterprotocol.net/images/three-painter-protocol-install-07.jpg",
       "description": "Two large works on paper, each showing a standing blue-green figure, pinned to the wall beside the gallery entrance.",
+      "about": [
+        { "@id": "https://www.threepainterprotocol.net/#ash-display-dirty-linen" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-age-of-bronze-ii" },
+        { "@id": "https://www.threepainterprotocol.net/#display-ash-display-dirty-linen" },
+        { "@id": "https://www.threepainterprotocol.net/#display-fortnum-age-of-bronze-ii" }
+      ],
+      "contentLocation": { "@id": "https://www.threepainterprotocol.net/#gallery" },
       "license": "https://www.threepainterprotocol.net/rights.html",
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
@@ -777,6 +937,23 @@
       "@id": "https://www.threepainterprotocol.net/#img-install-08",
       "contentUrl": "https://www.threepainterprotocol.net/images/three-painter-protocol-install-08.jpg",
       "description": "Across the corner, with the group of paintings on the partition wall at left and the small painting on the whitewashed brick wall at right.",
+      "about": [
+        { "@id": "https://www.threepainterprotocol.net/#ash-untitled" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-in-transit" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-portrait-of-space" },
+        { "@id": "https://www.threepainterprotocol.net/#ash-play-for-view-finding" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-amber" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-considering-sj-schema" },
+        { "@id": "https://www.threepainterprotocol.net/#ash-display-dirty-linen" },
+        { "@id": "https://www.threepainterprotocol.net/#display-ash-untitled" },
+        { "@id": "https://www.threepainterprotocol.net/#display-jeong-in-transit" },
+        { "@id": "https://www.threepainterprotocol.net/#display-fortnum-portrait-of-space" },
+        { "@id": "https://www.threepainterprotocol.net/#display-ash-play-for-view-finding" },
+        { "@id": "https://www.threepainterprotocol.net/#display-jeong-amber" },
+        { "@id": "https://www.threepainterprotocol.net/#display-fortnum-considering-sj-schema" },
+        { "@id": "https://www.threepainterprotocol.net/#display-ash-display-dirty-linen" }
+      ],
+      "contentLocation": { "@id": "https://www.threepainterprotocol.net/#gallery" },
       "license": "https://www.threepainterprotocol.net/rights.html",
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
@@ -789,7 +966,18 @@
       "@type": "ImageObject",
       "@id": "https://www.threepainterprotocol.net/#img-install-09",
       "contentUrl": "https://www.threepainterprotocol.net/images/three-painter-protocol-install-09.jpg",
-      "description": "From the entrance end of the gallery, with three works on the far wall and a tall striped vertical painting on the return wall at right.",
+      "description": "From the entrance end of the gallery, with three works on the far wall and, at right, a tall striped vertical painting on the partition wall, beside a doorway.",
+      "about": [
+        { "@id": "https://www.threepainterprotocol.net/#ash-display-screen" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-prosopopoeia" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-sitter" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-age-of-bronze" },
+        { "@id": "https://www.threepainterprotocol.net/#display-ash-display-screen" },
+        { "@id": "https://www.threepainterprotocol.net/#display-fortnum-prosopopoeia" },
+        { "@id": "https://www.threepainterprotocol.net/#display-jeong-sitter" },
+        { "@id": "https://www.threepainterprotocol.net/#display-jeong-age-of-bronze" }
+      ],
+      "contentLocation": { "@id": "https://www.threepainterprotocol.net/#gallery" },
       "license": "https://www.threepainterprotocol.net/rights.html",
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
@@ -803,6 +991,23 @@
       "@id": "https://www.threepainterprotocol.net/#img-install-10",
       "contentUrl": "https://www.threepainterprotocol.net/images/three-painter-protocol-install-10.jpg",
       "description": "Seen through the glass doors of The Transformation Gallery, with the exhibition poster, the tall striped vertical painting, and the partition wall group visible inside.",
+      "about": [
+        { "@id": "https://www.threepainterprotocol.net/#jeong-age-of-bronze" },
+        { "@id": "https://www.threepainterprotocol.net/#ash-untitled" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-portrait-of-space" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-in-transit" },
+        { "@id": "https://www.threepainterprotocol.net/#ash-play-for-view-finding" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-amber" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-considering-sj-schema" },
+        { "@id": "https://www.threepainterprotocol.net/#display-jeong-age-of-bronze" },
+        { "@id": "https://www.threepainterprotocol.net/#display-ash-untitled" },
+        { "@id": "https://www.threepainterprotocol.net/#display-fortnum-portrait-of-space" },
+        { "@id": "https://www.threepainterprotocol.net/#display-jeong-in-transit" },
+        { "@id": "https://www.threepainterprotocol.net/#display-ash-play-for-view-finding" },
+        { "@id": "https://www.threepainterprotocol.net/#display-jeong-amber" },
+        { "@id": "https://www.threepainterprotocol.net/#display-fortnum-considering-sj-schema" }
+      ],
+      "contentLocation": { "@id": "https://www.threepainterprotocol.net/#gallery" },
       "license": "https://www.threepainterprotocol.net/rights.html",
       "acquireLicensePage": "https://www.threepainterprotocol.net/rights.html",
       "creditText": "Photograph by Seungjo Jeong",
@@ -821,6 +1026,185 @@
       "embedUrl": "https://www.youtube.com/embed/Y1Y0AhfnQSg",
       "url": "https://www.youtube.com/shorts/Y1Y0AhfnQSg",
       "about": { "@id": "https://www.threepainterprotocol.net/#exhibition" }
+    }
+
+  ]
+}
+</script>
+
+<!--
+  Block 2: how each work was hung. One display:Display record per work, in
+  the display vocabulary published at https://www.seungjojeong.net/ns/display
+  (the terms the exhibition pages on seungjojeong.net use). The walls are
+  Schema.org Places in block 1, and each installation view lists, under
+  "about", the works it shows and then their Display records.
+  display:nextTo names the works with no other work between them, side by
+  side or one above the other; the order along each wall is in the wall's
+  description. The two-part works' panels are told apart by their
+  descriptions in block 1, and display:panelOrder lists them as hung.
+  No heights: none were measured, and none have been estimated yet.
+-->
+<script type="application/ld+json">
+{
+  "@context": [
+    "https://schema.org",
+    { "display": "https://www.seungjojeong.net/ns/display#" }
+  ],
+  "@graph": [
+
+    {
+      "@type": "display:Display",
+      "@id": "https://www.threepainterprotocol.net/#display-jeong-age-of-bronze",
+      "display:work": { "@id": "https://www.threepainterprotocol.net/#jeong-age-of-bronze" },
+      "display:exhibition": { "@id": "https://www.threepainterprotocol.net/#exhibition" },
+      "display:wall": { "@id": "https://www.threepainterprotocol.net/#wall-partition" },
+      "display:nextTo": { "@id": "https://www.threepainterprotocol.net/#ash-untitled" }
+    },
+
+    {
+      "@type": "display:Display",
+      "@id": "https://www.threepainterprotocol.net/#display-ash-untitled",
+      "display:work": { "@id": "https://www.threepainterprotocol.net/#ash-untitled" },
+      "display:exhibition": { "@id": "https://www.threepainterprotocol.net/#exhibition" },
+      "display:wall": { "@id": "https://www.threepainterprotocol.net/#wall-partition" },
+      "display:nextTo": [
+        { "@id": "https://www.threepainterprotocol.net/#jeong-age-of-bronze" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-in-transit" }
+      ]
+    },
+
+    {
+      "@type": "display:Display",
+      "@id": "https://www.threepainterprotocol.net/#display-jeong-in-transit",
+      "display:work": { "@id": "https://www.threepainterprotocol.net/#jeong-in-transit" },
+      "display:exhibition": { "@id": "https://www.threepainterprotocol.net/#exhibition" },
+      "display:wall": { "@id": "https://www.threepainterprotocol.net/#wall-partition" },
+      "display:nextTo": [
+        { "@id": "https://www.threepainterprotocol.net/#ash-untitled" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-portrait-of-space" },
+        { "@id": "https://www.threepainterprotocol.net/#ash-play-for-view-finding" }
+      ]
+    },
+
+    {
+      "@type": "display:Display",
+      "@id": "https://www.threepainterprotocol.net/#display-fortnum-portrait-of-space",
+      "display:work": { "@id": "https://www.threepainterprotocol.net/#fortnum-portrait-of-space" },
+      "display:exhibition": { "@id": "https://www.threepainterprotocol.net/#exhibition" },
+      "display:wall": { "@id": "https://www.threepainterprotocol.net/#wall-partition" },
+      "display:nextTo": [
+        { "@id": "https://www.threepainterprotocol.net/#jeong-in-transit" },
+        { "@id": "https://www.threepainterprotocol.net/#ash-play-for-view-finding" }
+      ],
+      "display:arrangement": "Two panels side by side, a small gap between them: the conical form on the left, the red landscape on the right.",
+      "display:panelOrder": { "@list": [
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-portrait-of-space-panel-1" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-portrait-of-space-panel-2" }
+      ] }
+    },
+
+    {
+      "@type": "display:Display",
+      "@id": "https://www.threepainterprotocol.net/#display-ash-play-for-view-finding",
+      "display:work": { "@id": "https://www.threepainterprotocol.net/#ash-play-for-view-finding" },
+      "display:exhibition": { "@id": "https://www.threepainterprotocol.net/#exhibition" },
+      "display:wall": { "@id": "https://www.threepainterprotocol.net/#wall-partition" },
+      "display:nextTo": [
+        { "@id": "https://www.threepainterprotocol.net/#jeong-in-transit" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-portrait-of-space" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-amber" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-considering-sj-schema" }
+      ]
+    },
+
+    {
+      "@type": "display:Display",
+      "@id": "https://www.threepainterprotocol.net/#display-jeong-amber",
+      "display:work": { "@id": "https://www.threepainterprotocol.net/#jeong-amber" },
+      "display:exhibition": { "@id": "https://www.threepainterprotocol.net/#exhibition" },
+      "display:wall": { "@id": "https://www.threepainterprotocol.net/#wall-partition" },
+      "display:nextTo": [
+        { "@id": "https://www.threepainterprotocol.net/#ash-play-for-view-finding" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-considering-sj-schema" }
+      ]
+    },
+
+    {
+      "@type": "display:Display",
+      "@id": "https://www.threepainterprotocol.net/#display-fortnum-considering-sj-schema",
+      "display:work": { "@id": "https://www.threepainterprotocol.net/#fortnum-considering-sj-schema" },
+      "display:exhibition": { "@id": "https://www.threepainterprotocol.net/#exhibition" },
+      "display:wall": { "@id": "https://www.threepainterprotocol.net/#wall-partition" },
+      "display:nextTo": [
+        { "@id": "https://www.threepainterprotocol.net/#ash-play-for-view-finding" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-amber" }
+      ],
+      "display:arrangement": "Two panels side by side, a small gap between them: the figure on the pale ground on the left, the figure on dark grey on the right.",
+      "display:panelOrder": { "@list": [
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-considering-sj-schema-panel-1" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-considering-sj-schema-panel-2" }
+      ] }
+    },
+
+    {
+      "@type": "display:Display",
+      "@id": "https://www.threepainterprotocol.net/#display-ash-display-screen",
+      "display:work": { "@id": "https://www.threepainterprotocol.net/#ash-display-screen" },
+      "display:exhibition": { "@id": "https://www.threepainterprotocol.net/#exhibition" },
+      "display:wall": { "@id": "https://www.threepainterprotocol.net/#wall-far" },
+      "display:nextTo": { "@id": "https://www.threepainterprotocol.net/#fortnum-prosopopoeia" }
+    },
+
+    {
+      "@type": "display:Display",
+      "@id": "https://www.threepainterprotocol.net/#display-fortnum-prosopopoeia",
+      "display:work": { "@id": "https://www.threepainterprotocol.net/#fortnum-prosopopoeia" },
+      "display:exhibition": { "@id": "https://www.threepainterprotocol.net/#exhibition" },
+      "display:wall": { "@id": "https://www.threepainterprotocol.net/#wall-far" },
+      "display:nextTo": [
+        { "@id": "https://www.threepainterprotocol.net/#ash-display-screen" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-sitter" }
+      ],
+      "display:arrangement": "Two panels side by side, edge to edge: the head on the left, the grey drawn panel on the right.",
+      "display:panelOrder": { "@list": [
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-prosopopoeia-panel-1" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-prosopopoeia-panel-2" }
+      ] }
+    },
+
+    {
+      "@type": "display:Display",
+      "@id": "https://www.threepainterprotocol.net/#display-jeong-sitter",
+      "display:work": { "@id": "https://www.threepainterprotocol.net/#jeong-sitter" },
+      "display:exhibition": { "@id": "https://www.threepainterprotocol.net/#exhibition" },
+      "display:wall": { "@id": "https://www.threepainterprotocol.net/#wall-far" },
+      "display:nextTo": { "@id": "https://www.threepainterprotocol.net/#fortnum-prosopopoeia" },
+      "display:arrangement": "Two panels, one directly above the other: the panel with the grey band above, the panel with the green band below.",
+      "display:panelOrder": { "@list": [
+        { "@id": "https://www.threepainterprotocol.net/#jeong-sitter-panel-1" },
+        { "@id": "https://www.threepainterprotocol.net/#jeong-sitter-panel-2" }
+      ] }
+    },
+
+    {
+      "@type": "display:Display",
+      "@id": "https://www.threepainterprotocol.net/#display-ash-display-dirty-linen",
+      "display:work": { "@id": "https://www.threepainterprotocol.net/#ash-display-dirty-linen" },
+      "display:exhibition": { "@id": "https://www.threepainterprotocol.net/#exhibition" },
+      "display:wall": { "@id": "https://www.threepainterprotocol.net/#wall-brick" }
+    },
+
+    {
+      "@type": "display:Display",
+      "@id": "https://www.threepainterprotocol.net/#display-fortnum-age-of-bronze-ii",
+      "display:work": { "@id": "https://www.threepainterprotocol.net/#fortnum-age-of-bronze-ii" },
+      "display:exhibition": { "@id": "https://www.threepainterprotocol.net/#exhibition" },
+      "display:wall": { "@id": "https://www.threepainterprotocol.net/#wall-entrance" },
+      "display:arrangement": "Two sheets pinned side by side, edge to edge: the paler figure on the left, the deeper-toned figure on the right.",
+      "display:panelOrder": { "@list": [
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-age-of-bronze-ii-panel-1" },
+        { "@id": "https://www.threepainterprotocol.net/#fortnum-age-of-bronze-ii-panel-2" }
+      ] }
     }
 
   ]
@@ -1126,17 +1510,17 @@
     <figure>
       <a class="zoom" href="images/three-painter-protocol-install-01.jpg"><img src="images/three-painter-protocol-install-01.jpg"
            loading="lazy"
-           alt="Looking across the gallery: a group of seven small paintings on the free-standing partition wall at left, a single small painting on the whitewashed brick wall beyond, and a draped cloth on a branch standing in the foreground."></a>
+           alt="Looking across the gallery: six paintings on the free-standing partition wall at left, a single small painting on the whitewashed brick wall beyond, and in the foreground a draped cloth on a branch, used in Jesse Ash’s performance on the opening night."></a>
     </figure>
     <figure>
       <a class="zoom" href="images/three-painter-protocol-install-02.jpg"><img src="images/three-painter-protocol-install-02.jpg"
            loading="lazy"
-           alt="The partition wall hung with seven works: two landscape-format paintings at left, a pair of small panels above, a large soft-toned abstract at centre, an orange and grey geometric painting, and two small grisaille figure panels at upper right."></a>
+           alt="Six of the seven works on the partition wall: two landscape-format paintings at left, a pair of small panels above, a large soft-toned abstract at centre, an orange and grey geometric painting, and two small grisaille figure panels at upper right."></a>
     </figure>
     <figure>
       <a class="zoom" href="images/three-painter-protocol-install-03.jpg"><img src="images/three-painter-protocol-install-03.jpg"
            loading="lazy"
-           alt="Across the corner of the gallery, with the draped cloth and branch at left, three works on the far wall, and the partition wall group seen edge-on at right."></a>
+           alt="Across the corner of the gallery, with the draped cloth and branch from Jesse Ash’s performance at left, three works on the far wall, and the partition wall group seen edge-on at right."></a>
     </figure>
     <figure>
       <a class="zoom" href="images/three-painter-protocol-install-04.jpg"><img src="images/three-painter-protocol-install-04.jpg"
@@ -1146,7 +1530,7 @@
     <figure>
       <a class="zoom" href="images/three-painter-protocol-install-05.jpg"><img src="images/three-painter-protocol-install-05.jpg"
            loading="lazy"
-           alt="Four works hung as a group: a black and ochre landscape, a blue and black painting with a dark circular void, and two small panels above in dark green and red."></a>
+           alt="Three works hung as a group: a black and ochre landscape, a blue and black painting with a dark circular void, and a pair of small panels above in dark green and red."></a>
     </figure>
     <figure>
       <a class="zoom" href="images/three-painter-protocol-install-06.jpg"><img src="images/three-painter-protocol-install-06.jpg"
@@ -1166,7 +1550,7 @@
     <figure>
       <a class="zoom" href="images/three-painter-protocol-install-09.jpg"><img src="images/three-painter-protocol-install-09.jpg"
            loading="lazy"
-           alt="From the entrance end of the gallery, with three works on the far wall and a tall striped vertical painting on the return wall at right."></a>
+           alt="From the entrance end of the gallery, with three works on the far wall and, at right, a tall striped vertical painting on the partition wall, beside a doorway."></a>
     </figure>
     <figure>
       <a class="zoom" href="images/three-painter-protocol-install-10.jpg"><img src="images/three-painter-protocol-install-10.jpg"
