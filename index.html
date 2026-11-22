@@ -114,6 +114,7 @@
       "subjectOf": { "@id": "https://www.threepainterprotocol.net/#cocker-text" },
       "recordedIn": [
         { "@id": "https://youtu.be/0k2LPoZsboY" },
+        { "@id": "https://youtu.be/xnA7mBp9UBM" },
         { "@id": "https://youtu.be/Y1Y0AhfnQSg" }
       ]
     },
@@ -1037,6 +1038,20 @@
     },
     {
       "@type": "VideoObject",
+      "@id": "https://youtu.be/xnA7mBp9UBM",
+      "name": "Three Painter Protocol: Close-up view",
+      "description": "Close-up views of six works on the wall opposite the entrance at The Transformation Gallery, London.",
+      "uploadDate": "2026-11-22",
+      "thumbnailUrl": "https://img.youtube.com/vi/xnA7mBp9UBM/hqdefault.jpg",
+      "embedUrl": "https://www.youtube.com/embed/xnA7mBp9UBM",
+      "url": "https://youtu.be/xnA7mBp9UBM",
+      "creator": { "@id": "https://www.threepainterprotocol.net/#jeong" },
+      "recordedAt": { "@id": "https://www.threepainterprotocol.net/#exhibition" },
+      "about": { "@id": "https://www.threepainterprotocol.net/#exhibition" },
+      "contentLocation": { "@id": "https://www.threepainterprotocol.net/#gallery" }
+    },
+    {
+      "@type": "VideoObject",
       "@id": "https://youtu.be/Y1Y0AhfnQSg",
       "name": "Three Painter Protocol: Exhibition Walkthrough",
       "description": "A walkthrough of the exhibition at The Transformation Gallery, London.",
@@ -1340,12 +1355,14 @@
 
   /* The video players, as on seungjojeong.net. Each box takes its video's
      own shape, so the picture fills it without bars. The panoramic view is
-     3432 x 2086. The walkthrough is a Short filmed upright: its encoded
-     sizes are 1440 x 2560, although oEmbed reports 200 x 113 and its
-     thumbnail is 1280 x 720, which is why it first had a 16:9 box here. */
+     3432 x 2086 and the close-up view 3542 x 2084. The walkthrough is a
+     Short filmed upright: its encoded sizes are 1440 x 2560, although
+     oEmbed reports 200 x 113 and its thumbnail is 1280 x 720, which is why
+     it first had a 16:9 box here. */
   .video { aspect-ratio: 16 / 9; background: var(--paper); margin: 0 0 0.95rem; }
   .video iframe { width: 100%; height: 100%; border: 0; display: block; }
   .video.wide { aspect-ratio: 3432 / 2086; }
+  .video.closeup { aspect-ratio: 3542 / 2084; }
   .video.vertical { aspect-ratio: 9 / 16; max-width: 22rem; }
   .vid + .vid { margin-top: 2.5rem; }
 
@@ -1600,6 +1617,18 @@
             allowfullscreen></iframe>
   </div>
   <p class="meta">Panoramic view of the exhibition &middot; <a href="https://youtu.be/0k2LPoZsboY">Watch on YouTube</a></p>
+  </div>
+
+  <div class="vid" id="video-closeup">
+  <div class="video closeup">
+    <iframe src="https://www.youtube-nocookie.com/embed/xnA7mBp9UBM"
+            title="Close-up view of six works on the wall opposite the entrance, &ldquo;Three Painter Protocol&rdquo;, The Transformation Gallery, London, 2026"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+  </div>
+  <p class="meta">Close-up view of six works on the wall opposite the entrance &middot; <a href="https://youtu.be/xnA7mBp9UBM">Watch on YouTube</a></p>
   </div>
 
   <div class="vid" id="video-walkthrough">
