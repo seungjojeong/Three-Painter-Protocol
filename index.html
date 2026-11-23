@@ -2,13 +2,17 @@
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
-<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js). Visitor statistics only: Google signals and ad
+     personalisation off. A visitor can turn statistics off on any rights
+     page; the choice is kept in their browser ("stats-off"), and the tag
+     then sets no cookies and sends nothing. -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XL0MRPBZ5"></script>
 <script>
+  try { if (localStorage.getItem('stats-off') === '1') window['ga-disable-G-7XL0MRPBZ5'] = true; } catch (e) {}
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-7XL0MRPBZ5');
+  gtag('config', 'G-7XL0MRPBZ5', { allow_google_signals: false, allow_ad_personalization_signals: false, cookie_expires: 31536000, cookie_update: false });
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- iOS Safari turns anything address-shaped into a Maps link of its own
